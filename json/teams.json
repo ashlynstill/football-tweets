@@ -1,0 +1,100 @@
+[
+ 
+{ "school": "Alabama" , "mascot": "Crimson Tide" , "color": "#DC143C" , "conference": "SEC" , "search":["roll tide","rolltide","bama football","bama","alabama football","crimson tide football","rtr","roll tide roll","rolltideroll"] },
+
+{ "school": "Auburn" , "mascot": "Tigers" , "color": "#dd550c" , "conference": "SEC" , "search":["war eagle","wareagle","auburn football","footballau","auburn fb","wardamneagle","goauburn","auburnfootball"] },
+
+{ "school": "Florida" , "mascot": "Gators" , "color": "#0021A5" , "conference": "SEC" , "search":["gogators","go gators","florida gators","florida football","uf football","uf gators","#gators","#uf"] },
+
+{ "school": "Tennessee" , "mascot": "Volunteers" , "color": "#F77F00" , "conference": "SEC" , "search":["tennessee football","volnation","govols","go vols","volunteer football","vol_football","#UT","vol football","smokeyvols","bigorange"] },
+
+{ "school": "Missouri" , "mascot": "Tigers" , "color": "#F1B82D" , "conference": "SEC" , "search":["mizzou football","mizzou tigers","mizzoufootball","mizzou tiger","mizzougameday","miz football","go miz","missouri football","gomizzou","gomiz"] },
+
+{ "school": "Kentucky" , "mascot": "Wildcats" , "color": "#005DAA" , "conference": "SEC" , "search":["kentucky football","kentucky wildcat football","ukfootball","weareUK","bbn","packCWS","stoopstroop"] },
+
+{ "school": "Vanderbilt" , "mascot": "Commodores" , "color": "#997F3D" , "conference": "SEC" , "search":["vandyfootball","vandy football","vanderbilt football","commodore football","godores","go dores","vandy","anchordown"] },
+
+{ "school": "Arkansas" , "mascot": "Razorbacks" , "color": "#BE0F34" , "conference": "SEC" , "search":["arkansas football","razorback football","razorbackFB","#wps","woopigsooie","woo pig sooie","hognation","call the hogs"] },
+
+{ "school": "Georgia" , "mascot": "Bulldogs" , "color": "#AE070F" , "conference": "SEC" , "search":["godawgs","go dawgs","uga football","uga fb","werunthisstate","georgia bulldogs","georgiabulldogs","georgiafb"] },
+
+{ "school": "Texas A&M" , "mascot": "Aggies" , "color": "#660000" , "conference": "SEC" , "search":["aggie football","texas a&m football","aggies","goaggies","go aggies","aggiefb","tamu","12thman"] },
+
+{ "school": "LSU" , "mascot": "Tigers" , "color": "#461D7C" , "conference": "SEC" , "search":["lsu football","lsufb","geauxtigers","lsufball","lsu","lsuwin","geaux tigers","lsu tigers"] },
+
+{ "school": "Ole Miss" , "mascot": "Rebels" , "color": "#cf142b" , "conference": "SEC" , "search":["hotty toddy","hottytoddy","gorebels","go rebels","ole miss football","olemissfb", "ole miss rebels","rebel football","rebelnation","gorebs","olemiss"] },
+
+{ "school": "Mississippi State" , "mascot": "Bulldogs" , "color": "#660000" , "conference": "SEC" , "search":["Mississippi state football","hailstate","hail state","hailstatefb","msu football","fight4msu","miss state football"] },
+
+{ "school": "South Carolina" , "mascot": "Gamecocks" , "color": "#73000a" , "conference": "SEC" , "search":["scfb","south carolina football","gamecocks","gamecock football","gamecock","uofsc","gamecockfb"] },
+
+{ "school": "North Carolina" , "mascot": "Tar Heels" , "color": "#56A0D3" , "conference": "ACC" , "search":["UNC football","goheels","goheelsgoamerica","tar heel football","tarheels","tar heels","go heels","#heels","tarheelnation","uncfb"] },
+
+{ "school": "Clemson" , "mascot": "Tigers" , "color": "#F66733" , "conference": "ACC" , "search":["clemson football","clemsonfb","cu_football","solidorange","clemson tigers"] },
+
+{ "school": "Georgia Tech" , "mascot": "Yellow Jackets" , "color": "#F0CF73" , "conference": "ACC" , "search":["georgia tech football","ga tech football","gatechfootball","gt_football","#GT","gatech"] },
+
+{ "school": "Florida State" , "mascot": "Seminoles" , "color": "#540115" , "conference": "ACC" , "search":["fsu_football","fsu football","#noles","go noles","#FSU","florida state football","#warchant","seminole football"] },
+
+{ "school": "Miami" , "mascot": "Hurricanes" , "color": "#366732" , "conference": "ACC" , "search":["Miami football","MiamiHurricanes","miami hurricanes","go canes","gocanes"] },
+
+{ "school": "NC State" , "mascot": "Wolfpack" , "color": "#CC0000" , "conference": "ACC" , "search":["nc state football","ncsufb","gopack","go pack","ncsu football","wolfpack football","go wolfpack","state wolfpack","packfootball","ncstate","1pack1goal"] },
+
+{ "school": "Virginia" , "mascot": "Cavaliers" , "color": "#114475" , "conference": "ACC" , "search":["wahoowa","gohoos","hoos football","uva football","uva_football","#uva","hoo football","gohoos","uva cavaliers","uvafb"] },
+
+{ "school": "Virginia Tech" , "mascot": "Hokies" , "color": "#660000" , "conference": "ACC" , "search":["gohokies","va tech football","vt football","go hokies","vt_football","hokie football"] },
+
+{ "school": "Maryland" , "mascot": "Terrapins" , "color": "#D5002B" , "conference": "ACC" , "search":["md_football","maryland football","goterps","terps football","umd football"] },
+
+{ "school": "Boston College" , "mascot": "Eagles" , "color": "#821E1E" , "conference": "ACC" , "search":["boston college football","bcfootballnews","#bcfootball","wearebc"] },
+
+{ "school": "Pitt" , "mascot": "Panthers" , "color": "#003263" , "conference": "ACC" , "search":["gopittfootball","pitt football","pitt panthers","gopitt","#pitt","#hailpitt"] },
+
+{ "school": "Syracuse" , "mascot": "Orange" , "color": "#F37321" , "conference": "ACC" , "search":["syrfootball","cuse","goorange","syracuse orange","syracuse football","#syracuse"] },
+
+{ "school": "Duke" , "mascot": "Blue Devils" , "color": "#004C7D" , "conference": "ACC" , "search":["duke_fb","goduke","duke football","#bluedevils","dukefootball"] },
+
+{ "school": "Wake Forest" , "mascot": "Demon Deacons" , "color": "#C49544" , "conference": "ACC" , "search":["wakefb","demon deacons","deaconfootball","gowake","godeacs","wake football","deacs","go deacs"] },
+   
+{ "school": "Louisville" , "mascot": "Cardinals" , "color": "#AD0000" , "conference": "American (formerly Big East)" , "search":["louisville football","gocards","louisville cardinals","cardinal football","cardnation","gocards","L1C4"] },
+
+{ "school": "East Carolina" , "mascot": "Pirates" , "color": "#4A1F68" , "conference": "C-USA" , "search":["pirate football","ecu football","piratenation","ecufootball","ecu pirates","gopirates","go pirates","east carolina football"] },
+
+{ "school": "Southern Miss" , "mascot": "Eagles" , "color": "#FDC737" , "conference": "C-USA" , "search":["southern miss football","#southernmiss","usm football","#usm","#smttt","southernmissfb","goldeneaglepride"] },
+
+{ "school": "Central Florida" , "mascot": "Knights" , "color": "#B4985A" , "conference": "American (formerly Big East)" , "search":["ucf_football","ucf football","central florida football","#chargeon","#ucf","#goknights","ucf fb"] },
+
+{ "school": "South Florida" , "mascot": "Bulls" , "color": "#004A36" , "conference": "American (formerly Big East)" , "search":["#USF football","usffootball","south florida football","usf football","gobulls"] },
+
+{ "school": "Georgia State" , "mascot": "Panthers" , "color": "#005DAA" , "conference": "Sun Belt" , "search":["georgia state football","allblueallin","gsu football","gsupanthers","statenotsouthern"] },
+
+{ "school": "Georgia Southern" , "mascot": "Eagles" , "color": "#003775" , "conference": "Southern" , "search":["southernnotstate","georgia southern football","gsathletics","ga southern football"] },
+
+{ "school": "Valdosta State" , "mascot": "Blazers" , "color": "#9D0100" , "conference": "Gulf South" , "search":["valdosta state football","vsu football","vsu blazers","valdostastfb","vsufootball","#VSU"] }
+
+{ "school": "Chattanooga" , "mascot": "Mocs" , "color": "#01457b" , "conference": "Southern" , "search": "'gomocs','go mocs','ut chattanooga football','chattanooga football','gomocsFB','mocs football','mocsnationFB','mocsnation'" },
+
+{ "school": "Western Carolina" , "mascot": "Catamounts" , "color": "#492F92" , "conference": "Southern" , "search": "'western carolina football','catamount football','catamountfb','catamountnation','catamountpride'" },
+
+{ "school": "Alabama State" , "mascot": "Hornets" , "color": "#f0a411" , "conference": "Southwestern Athletic Conference" , "search": "'alabama state hornets','asu hornets','bama state hornets','bama state football','bamastatebeatfb','alabamastate','gohornets'" },
+
+{ "school": "Appalachian State" , "mascot": "Mountaineers" , "color": "#f4c20a" , "conference": "Southern" , "search": "'appstate_fb','app mountaineer football','alwaysattack','appnation','appstate','appalachian state football','go neers','app state football','goapp'" },
+
+{ "school": "UTEP" , "mascot": "Miners" , "color": "#F65A1F" , "conference": "C-USA" , "search": "'utepfb','utep football','gominers','minerstrong','utep miners','minernation','miner_nation'" },
+
+{ "school": "Furman" , "mascot": "Paladins" , "color": "#6B3FA0" , "conference": "Southern" , "search": "'furmanfootball','furman paladins','paladin football','paladinfootball','gopaladins'" },
+
+{ "school": "Idaho" , "mascot": "Vandals" , "color": "#B18E5F" , "conference": "Independent" , "search": "'idaho vandals','idaho_vandals','go vandals','govandals','#vandals','uidaho','vandals football'" },
+
+{ "school": "Troy" , "mascot": "Trojans" , "color": "#A20531" , "conference": "Sun Belt" , "search": "'troy football','troy trojans','#troytrojans','troytrojansfb'" },
+
+{ "school": "Bowling Green" , "mascot": "Falcons" , "color": "#613005" , "conference": "Mid-American" , "search": "'bgfalconfootbal','bowling green football','bowling green falcons','bg falcons football','wearebg','bgsu','rollalong'" },
+
+{ "school": "Coastal Carolina" , "mascot": "Chanticleer" , "color": "#008080" , "conference": "Big South" , "search": "'chanticleer football','goteal','chantnation','chantsup','bleedteal','gochants','go chanticleers','ccu football','ccu fb'" },
+
+{ "school": "Old Dominion" , "mascot": "Monarchs" , "color": "#002B5F" , "conference": "Colonial Athletic Association" , "search": "'old dominion football','odu football','ODUfootball','odufb','odu monarchs','old dominion monarch'" },
+
+{ "school": "The Citadel" , "mascot": "Bulldogs" , "color": "#4189DD" , "conference": "Southern" , "search": "'citadel football','citadelfootball','#TheCitadel','citadel bulldogs'" },
+
+]
+    
