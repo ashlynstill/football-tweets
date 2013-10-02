@@ -1,14 +1,4 @@
-Twitter Cashtag Heatmap
-=======================
+Counting college football tweets using Node.js
+==============================================
 
-A demonstration of using Node.js with Twitter's streaming capability to create a live heatmap via Socket.io!
-
-Demo
-=======================
-
-Check out the live demo at: http://lit-spire-4322.herokuapp.com/
-
-Screenshot
-=======================
-
-![Screenshot](https://raw.github.com/thedillonb/twitter-cashtag-heatmap/master/screenshot.png)
+A node.js application using Twitter's Streaming API, socket.io and D3.js to count tweets containing team and game-specific keywords and visualizing which college football games in the Southeast are being talked about the most online.
