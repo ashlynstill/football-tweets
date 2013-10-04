@@ -4,22 +4,118 @@
 	<title>Football tweets</title>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="components/socket.io-client/dist/socket.io.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script src="/javascripts/script.js"></script>
+	<!--<link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.css">-->
 	<style>
-	.bar {
-		height:20px;
-		border:1px solid #aaa;
-	}
-	ul, li{
-		list-style-type:none;
-		margin-left:0px;
-		padding-left:0px;
+
+	body {
+	  font: 11px sans-serif;
 	}
 
+	.axis line,
+	.axis path {
+	  fill: none;
+	  stroke: none;
+	  shape-rendering: crispEdges;
+	}
+	#tooltip {
+	    position: absolute;
+	    padding: 10px;
+	    background-color: white;
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    border-radius: 10px;
+	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    pointer-events: none;
+	}
+	#tooltip.hidden {
+	    display: none;
+	}
+	#conf-chart{
+		display:none;
+	}
+	#map-chart{
+		display:none;
+	}
+	.charts {
+		width:100%;
+	}
+	.split-charts{
+		width:50%;
+		float:left;
+	}
+	.split-charts:first{
+		border-right:1px solid #aaa;
+	}
+	#char-nav{
+		width:100%;
+		background-color:#fff;
+		border-bottom:1px solid #aaa;
+		margin-bottom:0px;
+		padding:0px;
+	}
+	#char-nav ul{
+		padding:20px 0px;
+		height:auto;
+		margin:15px 0px;
+	}
+	#char-nav li{
+		list-style-type:none;
+		display:inline;
+		float:left;
+		border-radius:5px 5px 0px 0px;
+		border:1px solid #aaa;
+		cursor:pointer;
+	}
+	#char-nav li:hover{
+		border-bottom:1px solid #fff;
+		color:#444;
+	}
+	#char-nav li:first-child{
+		border-bottom:1px solid #fff;
+
+	}
+	#char-nav li p{
+		font-size:14px;
+		font-weight:bold;
+		padding:10px 20px;
+		line-height:1em;
+		margin:0px;
+		font-color:inherit;
+	}
+	.title{
+		width:100%;
+		border-bottom:1px dashed #aaa;
+		padding:10px 0px;
+		margin-bottom:15px;
+	}
 	</style>
 </head>
 <body>
-	<ul id="school_list">
-	</ul>
+	<div id="tooltip">
+	</div>
+	<div id="char-nav">
+		<ul>
+			<li id="all"><p>All games</p></li>
+			<li id="conf"><p>Conferences</p></li>
+			<li id="map"><p>Map</p></li>
+		</ul>
+	</div>
+	<div id="charts">
+		<div class="charts" id="all-chart">
+		</div>
+		<div id="conf-chart">
+			<div class="split-charts" id="acc-chart">
+			</div>
+			<div class="split-charts" id="sec-chart">
+			</div>
+		</div>
+		<div class="charts" id="map-chart">
+		</div>
+	</div>
 </body>
 </html>

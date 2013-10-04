@@ -70,7 +70,7 @@
 
 { "school": "Georgia Southern" , "mascot": "Eagles" , "color": "#003775" , "conference": "Southern" , "search":["southernnotstate","georgia southern football","gsathletics","ga southern football"] },
 
-{ "school": "Valdosta State" , "mascot": "Blazers" , "color": "#9D0100" , "conference": "Gulf South" , "search":["valdosta state football","vsu football","vsu blazers","valdostastfb","vsufootball","#VSU"] }
+{ "school": "Valdosta State" , "mascot": "Blazers" , "color": "#9D0100" , "conference": "Gulf South" , "search":["valdosta state football","vsu football","vsu blazers","valdostastfb","vsufootball","#VSU"] },
 
 { "school": "Chattanooga" , "mascot": "Mocs" , "color": "#01457b" , "conference": "Southern" , "search": "'gomocs','go mocs','ut chattanooga football','chattanooga football','gomocsFB','mocs football','mocsnationFB','mocsnation'" },
 
@@ -94,7 +94,7 @@
 
 { "school": "Old Dominion" , "mascot": "Monarchs" , "color": "#002B5F" , "conference": "Colonial Athletic Association" , "search": "'old dominion football','odu football','ODUfootball','odufb','odu monarchs','old dominion monarch'" },
 
-{ "school": "The Citadel" , "mascot": "Bulldogs" , "color": "#4189DD" , "conference": "Southern" , "search": "'citadel football','citadelfootball','#TheCitadel','citadel bulldogs'" },
+{ "school": "The Citadel" , "mascot": "Bulldogs" , "color": "#4189DD" , "conference": "Southern" , "search": "'citadel football','citadelfootball','#TheCitadel','citadel bulldogs'" }
 
 ]
     

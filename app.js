@@ -25,7 +25,8 @@ var confs = dataMod.teams[5];
 var mascots = dataMod.teams[6];
 var ids = dataMod.teams[0];
 var results = [ids,count,teams,colors,confs,mascots]; // team info array
-var gamesArr = dataMod.games; //games this week from json parse js
+var places = []; 
+var gamesArr = [dataMod.games,places];
 //var gamesArr = [watchList,gtw]; //array we're piping out with the team info and games this week array
 
 
@@ -51,7 +52,7 @@ if ('development' == app.get('env')) {
 //Our only route! Render it with the array we're piping out
 app.get('/', function(req, res) {
   res.render('results.html', { data: gamesArr });
-  //res.json('results.json', {data: gamesArr});
+  //res.json('results.json', {data: places});
 });
 
 //Start a Socket.IO listen
@@ -89,43 +90,46 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
     lowtweet = lowtweet.toLowerCase();
     var fix_tweet = lowtweet.replace(lowtweet[lowtweet.search('"')],' ');
     fix_tweet = fix_tweet.replace('\n',' ');
-
       for (var i=0;i<watchSymbols.length;i++){
         var this_param = watchSymbols[i];
         for (var j=0;j<this_param.length;j++){
           if (lowtweet.search(this_param[j]) >= 0){
             count[i]++;
+            if (tweet.place != null){
+              places.push({"team":teams[i], "place":tweet.place.full_name});
+            }
+            
           };
         };
       }; 
 
-      for (var i=0;i<gamesArr.length;i++){
-            var team1 = gamesArr[i].team1;
-            var team2 = gamesArr[i].team2;
+      for (var i=0;i<gamesArr[0].length;i++){
+            var team1 = gamesArr[0][i].team1;
+            var team2 = gamesArr[0][i].team2;
             for (var j=0;j<results[0].length;j++){ 
               if (results[2][j] == team1){
-                gamesArr[i].team1_colors = results[3][j];
-                gamesArr[i].team1_mascot = results[5][j];
-                gamesArr[i].team1_conf = results[4][j];
-                gamesArr[i].team1_count = results[1][j];
+                gamesArr[0][i].team1_colors = results[3][j];
+                gamesArr[0][i].team1_mascot = results[5][j];
+                gamesArr[0][i].team1_conf = results[4][j];
+                gamesArr[0][i].team1_count = results[1][j];
               } if (results[2][j] == team2){
-                gamesArr[i].team2_colors = results[3][j];
-                gamesArr[i].team2_mascot = results[5][j];
-                gamesArr[i].team2_conf = results[4][j];
-                gamesArr[i].team2_count = results[1][j];
+                gamesArr[0][i].team2_colors = results[3][j];
+                gamesArr[0][i].team2_mascot = results[5][j];
+                gamesArr[0][i].team2_conf = results[4][j];
+                gamesArr[0][i].team2_count = results[1][j];
               }
             } 
         };
 
 
       //spit out data to socket.io
-      sockets.sockets.emit('data', gamesArr);
+     sockets.sockets.emit('data', gamesArr);
   });
 });
 
 //Reset everything on a new day!
 //We don't want to keep data around from the previous day so reset everything.
-new cronJob('0 0 * 2 * *', function(){
+/*new cronJob('0 0 * 2 * *', function(){
     //Reset the total
 
     //Clear out everything in the map
@@ -133,7 +137,7 @@ new cronJob('0 0 * 2 * *', function(){
 
     //Send the update to the clients
     sockets.sockets.emit('data', gamesArr);
-}, null, true);
+}, null, true);*/
 
 
 //Create the server
