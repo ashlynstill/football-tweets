@@ -167,8 +167,8 @@ $('#tooltip').hide();
                     var yPosition = event.pageY+20;
                     //Update Tooltip Position & value
                     d3.select("#tooltip")
-                        .style("left", xPosition)
-                        .style("top", yPosition)
+                        .style("left", xPosition+'px')
+                        .style("top", yPosition+'px')
                         .html('<b>'+d.team+' '+d.mascot+'</b><br/>Number of tweets: '+d.y);
                 })
                 .on("mouseout", function() {
