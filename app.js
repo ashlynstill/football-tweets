@@ -130,7 +130,7 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
 
 //Reset everything on a new day!
 //We don't want to keep data around from the previous day so reset everything.
-new cronJob('16 * * * * *', function(){
+new cronJob('60 * * * * *', function(){
       //Reset the total
 
       //Clear out everything in the map
