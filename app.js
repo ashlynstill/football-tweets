@@ -28,7 +28,7 @@ var ids = dataMod.teams[0];
 var results = [ids,count,teams,colors,confs,mascots]; // team info array
 var places = []; 
 var gamesArr = dataMod.games;
-var output = { "data":gamesArr, "places":places };
+var output = [ gamesArr, places ];
 //var gamesArr = [watchList,gtw]; //array we're piping out with the team info and games this week array
 
 
