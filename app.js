@@ -27,7 +27,8 @@ var mascots = dataMod.teams[6];
 var ids = dataMod.teams[0];
 var results = [ids,count,teams,colors,confs,mascots]; // team info array
 var places = []; 
-var gamesArr = [dataMod.games,places,results];
+var gamesArr = dataMod.games;
+var output = { "data":gamesArr, "places":places };
 //var gamesArr = [watchList,gtw]; //array we're piping out with the team info and games this week array
 
 
@@ -52,8 +53,8 @@ if ('development' == app.get('env')) {
 
 //Our only route! Render it with the array we're piping out
 app.get('/', function(req, res) {
-  res.render('results.html', { data: gamesArr });
-  //res.json('results.json', {data: places});
+  //res.render('results.html', { data: gamesArr });
+  res.json('results.json', {data: output});
 });
 
 //Start a Socket.IO listen
@@ -68,7 +69,7 @@ var sockets = io.listen(server);
 
 //If the client just connected, give them fresh data!
 sockets.sockets.on('connection', function(socket) { 
-    socket.emit('data', gamesArr);
+    socket.emit('data', output);
 });
 
 //oauth for twitter
@@ -104,42 +105,39 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
         };
       }; 
 
-      for (var i=0;i<gamesArr[0].length;i++){
-            var team1 = gamesArr[0][i].team1;
-            var team2 = gamesArr[0][i].team2;
+      for (var i=0;i<gamesArr.length;i++){
+            var team1 = gamesArr[i].team1;
+            var team2 = gamesArr[i].team2;
             for (var j=0;j<results[0].length;j++){ 
               if (results[2][j] == team1){
-                gamesArr[0][i].team1_colors = results[3][j];
-                gamesArr[0][i].team1_mascot = results[5][j];
-                gamesArr[0][i].team1_conf = results[4][j];
-                gamesArr[0][i].team1_count = results[1][j];
+                gamesArr[i].team1_colors = results[3][j];
+                gamesArr[i].team1_mascot = results[5][j];
+                gamesArr[i].team1_conf = results[4][j];
+                gamesArr[i].team1_count = results[1][j];
               } if (results[2][j] == team2){
-                gamesArr[0][i].team2_colors = results[3][j];
-                gamesArr[0][i].team2_mascot = results[5][j];
-                gamesArr[0][i].team2_conf = results[4][j];
-                gamesArr[0][i].team2_count = results[1][j];
+                gamesArr[i].team2_colors = results[3][j];
+                gamesArr[i].team2_mascot = results[5][j];
+                gamesArr[i].team2_conf = results[4][j];
+                gamesArr[i].team2_count = results[1][j];
               }
             } 
         };
-
-
+    sockets.sockets.emit('data', output);
       //spit out data to socket.io
-     sockets.sockets.emit('data', gamesArr);
+     //sockets.sockets.emit('data', gamesArr);
   });
 });
 
 //Reset everything on a new day!
 //We don't want to keep data around from the previous day so reset everything.
-/*new cronJob('0 0 * 2 * *', function(){
-    //Reset the total
+new cronJob('0 0 * 2 * *', function(){
+      //Reset the total
 
-    //Clear out everything in the map
-    _.each(count, function(v) { count[v] = 0; });
+      //Clear out everything in the map
 
-    //Send the update to the clients
-    sockets.sockets.emit('data', gamesArr);
-}, null, true);*/
-
+      //Send the update to the clients
+      sockets.sockets.emit('data', output);
+  }, null, true);
 
 //Create the server
 server.listen(app.get('port'), function(){

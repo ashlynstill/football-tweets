@@ -4,10 +4,9 @@ $(function() {
 $('#tooltip').hide();
     var socket = io.connect(window.location.hostname);
     var date;
+    
     socket.on('data', function(inputdata) {
-        var gamedata = inputdata[0];
-        var places = inputdata[1];
-        var allteams = inputdata[2];
+        var gamedata, places, allteams;
         var team1 = [];
         var team2 = [];
         var team1_sec = [];
@@ -17,6 +16,9 @@ $('#tooltip').hide();
         var axis_vals_all = [];
         var axis_vals_acc = [];
         var axis_vals_sec = [];
+        gamedata = inputdata[0];
+        places = inputdata[1];
+       // allteams = inputdata[2];
         for (var v=0;v<gamedata.length;v++){
             if (gamedata[v].team1_count != undefined && gamedata[v].team2_count != undefined){
                 team1.push({ "x":v , "y":gamedata[v].team1_count, "team":gamedata[v].team1, "color":gamedata[v].team1_colors, "mascot":gamedata[v].team1_mascot, "conf":gamedata[v].team1_conf });    
@@ -37,6 +39,7 @@ $('#tooltip').hide();
                 axis_vals_sec.push(team1[i].team + ' vs. ' + team2[i].team);
             }
         }
+    
 
         makeChart(team1,team2,'all-chart',axis_vals_all,'All games this week');
 
@@ -45,6 +48,25 @@ $('#tooltip').hide();
         for (var i=0;i<axis_vals_all.length;i++){
             $('#filtermap').append('<option id="option'+i+'">'+axis_vals_all[i]+'</option>');
         }
+
+        $('#filtermap').change(function(event){
+            var thisone = $(this).val();
+            var chart = 'map-chart';
+            if (thisone == 'All games'){
+                makeMap(places,chart,'Game tweets by location');
+            }
+            else {
+                thisone = thisone.split(' vs. ');
+                alert(thisone);
+                var selected_places = [];
+                for(var i=0;i<places.length;i++){
+                    if (places[i].team == thisone[0] || places[i].team == thisone[1]){
+                        selected_places.push(places[i]);
+                    }
+                }
+                makeMap(selected_places,chart,'Game tweets by location');
+            }
+        });
 
 
         $('li').each(function(){
@@ -75,7 +97,7 @@ $('#tooltip').hide();
                 }
             })
         })
-
+    
 
         function makeChart(team1,team2,chart,axis_vals,title){
             $('#'+chart).empty();
@@ -215,6 +237,8 @@ $('#tooltip').hide();
                 .style("text-anchor", "end");  
         };
 
+
+
         function makeMap(places,chart,title,teams){
 
             $('#map-chart').empty();
@@ -297,9 +321,8 @@ $('#tooltip').hide();
 
         };
 
-    });
-;
-})
+     });
+});
 
 
 
