@@ -57,7 +57,6 @@ $('#tooltip').hide();
             }
             else {
                 thisone = thisone.split(' vs. ');
-                alert(thisone);
                 var selected_places = [];
                 for(var i=0;i<places.length;i++){
                     if (places[i].team == thisone[0] || places[i].team == thisone[1]){
@@ -241,8 +240,7 @@ $('#tooltip').hide();
 
         function makeMap(places,chart,title,teams){
 
-            $('#map-chart').empty();
-            $('#map-holder h1').empty().append(title);
+            $('#map-holder h1').append(title);
             var w = $('#map-chart').width();
             var h = 600;
             var margin = {top: 40, right: 10, bottom: 20, left: 10},
