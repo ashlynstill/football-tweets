@@ -2,13 +2,43 @@
 <html>
 <head>
 	<title>Football tweets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="components/socket.io-client/dist/socket.io.min.js"></script>
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="/us.json"></script>
 	<script src="/javascripts/script.js"></script>
 	<!--<link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.css">-->
-	<style>
+
+  <style>
+
+  .background {
+    fill: none;
+    pointer-events: all;
+  }
+
+  #states {
+    fill: #eee;
+  }
+
+  #states .active {
+
+  }
+
+  #state-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+  }
 
 	body {
 	  font: 11px sans-serif;
@@ -22,15 +52,16 @@
 	}
 	#tooltip {
 	    position: absolute;
-	    padding: 10px;
+	    padding: 5px;
 	    background-color: white;
-	    -webkit-border-radius: 10px;
-	    -moz-border-radius: 10px;
-	    border-radius: 10px;
-	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-	    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-	    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+	    -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+	    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 	    pointer-events: none;
+	    z-index:10000;
 	}
 	#tooltip.hidden {
 	    display: none;
@@ -38,21 +69,17 @@
 	#conf-chart{
 		display:none;
 	}
-	#map-chart{
+	#map-holder{
 		display:none;
 	}
 	.charts {
-		width:100%;
 	}
 	.split-charts{
-		width:50%;
-		float:left;
 	}
 	.split-charts:first{
 		border-right:1px solid #aaa;
 	}
 	#char-nav{
-		width:100%;
 		background-color:#fff;
 		border-bottom:1px solid #aaa;
 		margin-bottom:0px;
@@ -93,29 +120,60 @@
 		padding:10px 0px;
 		margin-bottom:15px;
 	}
+	#map-sorter ul{
+		margin-left:0px;
+		padding-left:0px;
+	}
+	#map-sorter ul li{
+		list-style-type: none;
+		width:100%;
+		padding:5px 0px;
+		margin:5px 0px;
+		border-bottom:1px solid #000;
+		cursor:pointer;
+	}
+	#map-sorter ul li:hover{
+		color:#eee;
+	}
+	#filtermap{
+		float:left;
+		margin:10px 0px 0px 10px;
+	}
 	</style>
 </head>
 <body>
 	<div id="tooltip">
 	</div>
-	<div id="char-nav">
-		<ul>
-			<li id="all"><p>All games</p></li>
-			<li id="conf"><p>Conferences</p></li>
-			<li id="map"><p>Map</p></li>
-		</ul>
-	</div>
-	<div id="charts">
-		<div class="charts" id="all-chart">
-		</div>
-		<div id="conf-chart">
-			<div class="split-charts" id="acc-chart">
-			</div>
-			<div class="split-charts" id="sec-chart">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12" id="char-nav">
+				<ul>
+					<li id="all"><p>All games</p></li>
+					<li id="conf"><p>Conferences</p></li>
+					<li id="map"><p>Map</p></li>
+				</ul>
 			</div>
 		</div>
-		<div class="charts" id="map-chart">
+		<div class="row">
+			<div class="col-sm-12" id="charts">
+				<div class="row" id="all-chart">
+				</div>
+				<div class="row" id="conf-chart">
+					<div class="col-sm-6 split-charts" id="acc-chart">
+					</div>
+					<div class="col-sm-6 split-charts" id="sec-chart">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12" id="map-holder">
+						<h1 class="title row"></h1>
+						<div class="row" id="map-sorter">
+						</div>	
+						<div class="charts row" id="map-chart">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 </body>
 </html>

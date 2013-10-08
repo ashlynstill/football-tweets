@@ -72,29 +72,29 @@
 
 { "school": "Valdosta State" , "mascot": "Blazers" , "color": "#9D0100" , "conference": "Gulf South" , "search":["valdosta state football","vsu football","vsu blazers","valdostastfb","vsufootball","#VSU"] },
 
-{ "school": "Chattanooga" , "mascot": "Mocs" , "color": "#01457b" , "conference": "Southern" , "search": "'gomocs','go mocs','ut chattanooga football','chattanooga football','gomocsFB','mocs football','mocsnationFB','mocsnation'" },
+{ "school": "Chattanooga" , "mascot": "Mocs" , "color": "#01457b" , "conference": "Southern" , "search": ["gomocs","go mocs","ut chattanooga football","chattanooga football","gomocsFB","mocs football","mocsnationFB","mocsnation"] },
 
-{ "school": "Western Carolina" , "mascot": "Catamounts" , "color": "#492F92" , "conference": "Southern" , "search": "'western carolina football','catamount football','catamountfb','catamountnation','catamountpride'" },
+{ "school": "Western Carolina" , "mascot": "Catamounts" , "color": "#492F92" , "conference": "Southern" , "search": ["western carolina football","catamount football","catamountfb","catamountnation","catamountpride"] },
 
-{ "school": "Alabama State" , "mascot": "Hornets" , "color": "#f0a411" , "conference": "Southwestern Athletic Conference" , "search": "'alabama state hornets','asu hornets','bama state hornets','bama state football','bamastatebeatfb','alabamastate','gohornets'" },
+{ "school": "Alabama State" , "mascot": "Hornets" , "color": "#f0a411" , "conference": "Southwestern Athletic Conference" , "search": ["alabama state hornets","asu hornets","bama state hornets","bama state football","bamastatebeatfb","alabamastate","gohornets"] },
 
-{ "school": "Appalachian State" , "mascot": "Mountaineers" , "color": "#f4c20a" , "conference": "Southern" , "search": "'appstate_fb','app mountaineer football','alwaysattack','appnation','appstate','appalachian state football','go neers','app state football','goapp'" },
+{ "school": "Appalachian State" , "mascot": "Mountaineers" , "color": "#f4c20a" , "conference": "Southern" , "search": ["appstate_fb","app mountaineer football","alwaysattack","appnation","appstate","appalachian state football","go neers","app state football","goapp"] },
 
-{ "school": "UTEP" , "mascot": "Miners" , "color": "#F65A1F" , "conference": "C-USA" , "search": "'utepfb','utep football','gominers','minerstrong','utep miners','minernation','miner_nation'" },
+{ "school": "UTEP" , "mascot": "Miners" , "color": "#F65A1F" , "conference": "C-USA" , "search": ["utepfb","utep football","gominers","minerstrong","utep miners","minernation","miner_nation"] },
 
-{ "school": "Furman" , "mascot": "Paladins" , "color": "#6B3FA0" , "conference": "Southern" , "search": "'furmanfootball','furman paladins','paladin football','paladinfootball','gopaladins'" },
+{ "school": "Furman" , "mascot": "Paladins" , "color": "#6B3FA0" , "conference": "Southern" , "search": ["furmanfootball","furman paladins","paladin football","paladinfootball","gopaladins"] },
 
-{ "school": "Idaho" , "mascot": "Vandals" , "color": "#B18E5F" , "conference": "Independent" , "search": "'idaho vandals','idaho_vandals','go vandals','govandals','#vandals','uidaho','vandals football'" },
+{ "school": "Idaho" , "mascot": "Vandals" , "color": "#B18E5F" , "conference": "Independent" , "search": ["idaho vandals","idaho_vandals","go vandals","govandals","#vandals","uidaho","vandals football"] },
 
-{ "school": "Troy" , "mascot": "Trojans" , "color": "#A20531" , "conference": "Sun Belt" , "search": "'troy football','troy trojans','#troytrojans','troytrojansfb'" },
+{ "school": "Troy" , "mascot": "Trojans" , "color": "#A20531" , "conference": "Sun Belt" , "search": ["troy football","troy trojans","#troytrojans","troytrojansfb"] },
 
-{ "school": "Bowling Green" , "mascot": "Falcons" , "color": "#613005" , "conference": "Mid-American" , "search": "'bgfalconfootbal','bowling green football','bowling green falcons','bg falcons football','wearebg','bgsu','rollalong'" },
+{ "school": "Bowling Green" , "mascot": "Falcons" , "color": "#613005" , "conference": "Mid-American" , "search": ["bgfalconfootbal","bowling green football","bowling green falcons","bg falcons football","wearebg","bgsu","rollalong"] },
 
-{ "school": "Coastal Carolina" , "mascot": "Chanticleer" , "color": "#008080" , "conference": "Big South" , "search": "'chanticleer football','goteal','chantnation','chantsup','bleedteal','gochants','go chanticleers','ccu football','ccu fb'" },
+{ "school": "Coastal Carolina" , "mascot": "Chanticleer" , "color": "#008080" , "conference": "Big South" , "search": ["chanticleer football","goteal","chantnation","chantsup","bleedteal","gochants","go chanticleers","ccu football","ccu fb"] },
 
-{ "school": "Old Dominion" , "mascot": "Monarchs" , "color": "#002B5F" , "conference": "Colonial Athletic Association" , "search": "'old dominion football','odu football','ODUfootball','odufb','odu monarchs','old dominion monarch'" },
+{ "school": "Old Dominion" , "mascot": "Monarchs" , "color": "#002B5F" , "conference": "Colonial Athletic Association" , "search": ["old dominion football","odu football","ODUfootball","odufb","odu monarchs","old dominion monarch"] },
 
-{ "school": "The Citadel" , "mascot": "Bulldogs" , "color": "#4189DD" , "conference": "Southern" , "search": "'citadel football','citadelfootball','#TheCitadel','citadel bulldogs'" }
+{ "school": "The Citadel" , "mascot": "Bulldogs" , "color": "#4189DD" , "conference": "Southern" , "search": ["citadel football","citadelfootball","#TheCitadel","citadel bulldogs"] }
 
 ]
     

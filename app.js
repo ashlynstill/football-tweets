@@ -7,6 +7,7 @@ var express = require('express')
   , twitter = require('ntwitter')
   , cronJob = require('cron').CronJob
   , _ = require('underscore')
+  , fs = require('fs')
   , path = require('path');
 
 //Create an express app
@@ -26,7 +27,7 @@ var mascots = dataMod.teams[6];
 var ids = dataMod.teams[0];
 var results = [ids,count,teams,colors,confs,mascots]; // team info array
 var places = []; 
-var gamesArr = [dataMod.games,places];
+var gamesArr = [dataMod.games,places,results];
 //var gamesArr = [watchList,gtw]; //array we're piping out with the team info and games this week array
 
 
@@ -95,8 +96,8 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
         for (var j=0;j<this_param.length;j++){
           if (lowtweet.search(this_param[j]) >= 0){
             count[i]++;
-            if (tweet.place != null){
-              places.push({"team":teams[i], "place":tweet.place.full_name});
+            if (tweet.place !== null && tweet.coordinates != null){
+              places.push({"team":teams[i], "conf":confs[i], "color":colors[i], "coords":tweet.coordinates.coordinates, "place":tweet.place.full_name});
             }
             
           };

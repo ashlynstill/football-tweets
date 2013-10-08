@@ -7,6 +7,7 @@ $('#tooltip').hide();
     socket.on('data', function(inputdata) {
         var gamedata = inputdata[0];
         var places = inputdata[1];
+        var allteams = inputdata[2];
         var team1 = [];
         var team2 = [];
         var team1_sec = [];
@@ -39,11 +40,20 @@ $('#tooltip').hide();
 
         makeChart(team1,team2,'all-chart',axis_vals_all,'All games this week');
 
+        $('#map-sorter').empty().append('<h4 style="float:left;display:inline;">Filter by game:</h4>');
+        $('#map-sorter').append('<select id="filtermap"><option id="option_all">All games</option></select>');
+        for (var i=0;i<axis_vals_all.length;i++){
+            $('#filtermap').append('<option id="option'+i+'">'+axis_vals_all[i]+'</option>');
+        }
+
+
         $('li').each(function(){
             $(this).click(function(event){
                 var id=$(this).attr('id');
                 var chart;
-                $('#charts div').hide();
+                $('#map-holder').hide();
+                $('#conf-chart').hide();
+                $('#all-chart').hide();
                 $('#'+id+'-chart').show();
                 $('#'+id+'-chart div').show();
                 $(this).css({'border-bottom':'1px solid #fff'});
@@ -55,6 +65,13 @@ $('#tooltip').hide();
                     var chart1 = 'acc-chart', chart2 = 'sec-chart';
                     makeChart(team1_sec,team2_sec,chart2,axis_vals_sec,'SEC games');
                     makeChart(team1_acc,team2_acc,chart1,axis_vals_acc,'ACC games');
+                } if(id == 'map'){
+                    $('#map-holder').show();
+                    $('#map-holder row').show();
+                    $('#map-sorter').show();
+                    var chart = id+'-chart';
+                    var title
+                    makeMap(places,chart,'Game tweets by location');
                 }
             })
         })
@@ -66,7 +83,7 @@ $('#tooltip').hide();
             var w = $('#'+chart).width();
             var h = 700;
             var margin = {top: 40, right: 10, bottom: 20, left: 10},
-                width = w - margin.left - margin.right - 100,
+                width = w - margin.left - margin.right,
                 height = h - margin.top - margin.bottom - 100,
                 svg_width = w,
                 svg_height = h;
@@ -196,6 +213,88 @@ $('#tooltip').hide();
                 .attr("x", 100)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end");  
+        };
+
+        function makeMap(places,chart,title,teams){
+
+            $('#map-chart').empty();
+            $('#map-holder h1').empty().append(title);
+            var w = $('#map-chart').width();
+            var h = 600;
+            var margin = {top: 40, right: 10, bottom: 20, left: 10},
+                width = w - margin.left - margin.right - 100,
+                height = h - margin.top - margin.bottom - 100,
+                svg_width = w,
+                svg_height = h;
+            
+            //Create SVG element
+
+            var projection = d3.geo.albersUsa()
+                .scale(w+100)
+                .translate([w / 2, h / 2]);
+
+            var path = d3.geo.path()
+                .projection(projection);
+
+            var svg = d3.select('#'+chart)
+                        .append("svg")
+                        .attr("width", svg_width)
+                        .attr("height", svg_height);
+
+            svg.append("rect")
+                .attr("class", "background")
+                .attr("width", svg_width)
+                .attr("height", svg_height);
+               // .on("click", clicked);
+
+            var g = svg.append("g");
+
+            d3.json("us.json", function(error, us) {
+              g.append("g")
+                  .attr("id", "states")
+                .selectAll("path")
+                  .data(topojson.feature(us, us.objects.states).features)
+                .enter().append("path")
+                  .attr("d", path);
+
+              g.append("path")
+                  .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+                  .attr("id", "state-borders")
+                  .attr("d", path);
+
+                for (var i=0;i<places.length;i++){
+                    var coords = projection(places[i].coords);
+                    console.log(coords);
+                    if(coords != null){
+                        g.append('circle')
+                        .attr('cx', coords[0])
+                        .attr('cy', coords[1])
+                        .attr('r', 3)
+                        .attr('id', i)
+                        .style('fill',  places[i].color)
+                        .on("mouseover", function() {
+                            $('#tooltip').fadeIn();
+                            //Get this bar's x/y values, then augment for the tooltip
+                            var xPosition = event.pageX-40;
+                            var yPosition = event.pageY+20;
+                            var dotID = event.target.id;
+                            //Update Tooltip Position & value
+                            d3.select("#tooltip")
+                                .style("left", xPosition+'px')
+                                .style("top", yPosition+'px')
+                                .html('<b>'+places[dotID].team+'</b><br/>'+places[dotID].place);
+                        })
+                        .on("mouseout", function() {
+                            //Remove the tooltip
+                            $('#tooltip').hide();
+                        });
+                    }
+
+                }
+
+            });
+
+
         };
 
     });

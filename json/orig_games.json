@@ -431,4 +431,164 @@
 
 { "team1": "Wake Forest" , "team2": "Army" , "location": "West Point, NY" , "date": "9/21/13" },
 
+{ "team1": "Louisville" , "team2": "Ohio" , "location": "Louisville, KY" , "date": "9/1/13" },
+
+{ "team1": "Louisville" , "team2": "Eastern Kentucky" , "location": "Louisville, KY" , "date": "9/7/13" },
+
+{ "team1": "Louisville" , "team2": "Florida International" , "location": "Louisville, KY" , "date": "9/21/13" },
+
+{ "team1": "Louisville" , "team2": "Temple" , "location": "Philadelphia, PA" , "date": "10/5/13" },
+
+{ "team1": "Louisville" , "team2": "Rutgers" , "location": "Louisville, KY" , "date": "10/10/13" },
+
+{ "team1": "Louisville" , "team2": "Central Florida" , "location": "Louisville, KY" , "date": "10/18/13" },
+
+{ "team1": "Louisville" , "team2": "South Florida" , "location": "Tampa, FL" , "date": "10/26/13" },
+
+{ "team1": "Louisville" , "team2": "Connecticut" , "location": "East Hartford, CT" , "date": "11/8/13" },
+
+{ "team1": "Louisville" , "team2": "Houston" , "location": "Louisville, KY" , "date": "11/16/13" },
+
+{ "team1": "Louisville" , "team2": "Memphis" , "location": "Louisville, KY" , "date": "11/23/13" },
+
+{ "team1": "Louisville" , "team2": "Cincinnati" , "location": "Cincinnati, OH" , "date": "12/5/13" },
+
+{ "team1": "East Carolina" , "team2": "Old Dominion" , "location": "Greenville, NC" , "date": "8/31/13" },
+
+{ "team1": "East Carolina" , "team2": "Florida Atlantic" , "location": "Greenville, NC" , "date": "9/5/13" },
+
+{ "team1": "East Carolina" , "team2": "Middle Tennessee State" , "location": "Murfreesboro, TN" , "date": "10/5/13" },
+
+{ "team1": "East Carolina" , "team2": "Tulane" , "location": "New Orleans, LA" , "date": "10/12/13" },
+
+{ "team1": "East Carolina" , "team2": "Southern Miss" , "location": "Greenville, NC" , "date": "10/19/13" },
+
+{ "team1": "East Carolina" , "team2": "Florida International" , "location": "Miami, FL" , "date": "11/2/13" },
+
+{ "team1": "East Carolina" , "team2": "Tulsa" , "location": "Greenville, NC" , "date": "11/9/13" },
+
+{ "team1": "East Carolina" , "team2": "UAB" , "location": "Greenville, NC" , "date": "11/16/13" },
+
+{ "team1": "East Carolina" , "team2": "Marshall" , "location": "Huntington, WV" , "date": "11/29/13" },
+
+{ "team1": "Southern Miss" , "team2": "Texas State" , "location": "Hattiesburg, MS" , "date": "8/31/13" },
+
+{ "team1": "Southern Miss" , "team2": "Nebraska" , "location": "Lincoln, NE" , "date": "9/7/13" },
+
+{ "team1": "Southern Miss" , "team2": "Boise State" , "location": "Boise, ID" , "date": "9/28/13" },
+
+{ "team1": "Southern Miss" , "team2": "Florida International" , "location": "Hattiesburg, MS" , "date": "10/5/13" },
+
+{ "team1": "Southern Miss" , "team2": "North Texas" , "location": "Hattiesburg, MS" , "date": "10/26/13" },
+
+{ "team1": "Southern Miss" , "team2": "Marshall" , "location": "Huntington, WV" , "date": "11/2/13" },
+
+{ "team1": "Southern Miss" , "team2": "Louisiana Tech" , "location": "Ruston, LA" , "date": "11/9/13" },
+
+{ "team1": "Southern Miss" , "team2": "Florida Atlantic" , "location": "Hattiesburg, MS" , "date": "11/16/13" },
+
+{ "team1": "Southern Miss" , "team2": "Middle Tennessee State" , "location": "Hattiesburg, MS" , "date": "11/23/13" },
+
+{ "team1": "Southern Miss" , "team2": "UAB" , "location": "Birmingham, AL" , "date": "11/30/13" },
+
+{ "team1": "Central Florida" , "team2": "Akron" , "location": "Orlando, FL" , "date": "8/29/13" },
+
+{ "team1": "Central Florida" , "team2": "Florida International" , "location": "Miami, FL" , "date": "9/6/13" },
+
+{ "team1": "Central Florida" , "team2": "Penn State" , "location": "University Park, PA" , "date": "9/14/13" },
+
+{ "team1": "Central Florida" , "team2": "Memphis" , "location": "Memphis, TN" , "date": "10/5/13" },
+
+{ "team1": "Central Florida" , "team2": "Connecticut" , "location": "Orlando, FL" , "date": "10/26/13" },
+
+{ "team1": "Central Florida" , "team2": "Houston" , "location": "Orlando, FL" , "date": "11/9/13" },
+
+{ "team1": "Central Florida" , "team2": "Temple" , "location": "Philadelphia, PA" , "date": "11/16/13" },
+
+{ "team1": "Central Florida" , "team2": "Rutgers" , "location": "Orlando, FL" , "date": "11/21/13" },
+
+{ "team1": "Central Florida" , "team2": "South Florida" , "location": "Orlando, FL" , "date": "11/29/13" },
+
+{ "team1": "Central Florida" , "team2": "SMU" , "location": "Dallas, TX" , "date": "12/7/13" },
+
+{ "team1": "South Florida" , "team2": "McNeese State" , "location": "Tampa, FL" , "date": "8/31/13" },
+
+{ "team1": "South Florida" , "team2": "Michigan State" , "location": "East Lansing, MI" , "date": "9/7/13" },
+
+{ "team1": "South Florida" , "team2": "Florida Atlantic" , "location": "Tampa, FL" , "date": "9/14/13" },
+
+{ "team1": "South Florida" , "team2": "Cincinnati" , "location": "Tampa, FL" , "date": "10/5/13" },
+
+{ "team1": "South Florida" , "team2": "Connecticut" , "location": "Hartford, CT" , "date": "10/12/13" },
+
+{ "team1": "South Florida" , "team2": "Houston" , "location": "Houston, TX" , "date": "10/31/13" },
+
+{ "team1": "South Florida" , "team2": "Memphis" , "location": "Tampa, FL" , "date": "11/16/13" },
+
+{ "team1": "South Florida" , "team2": "SMU" , "location": "Tampa, FL" , "date": "11/23/13" },
+
+{ "team1": "South Florida" , "team2": "Rutgers" , "location": "Piscataway, NJ" , "date": "12/7/13" },
+
+{ "team1": "Georgia State" , "team2": "Samford" , "location": "Atlanta, GA" , "date": "8/30/13" },
+
+{ "team1": "Georgia State" , "team2": "Chattanooga" , "location": "Atlanta, GA" , "date": "9/7/13" },
+
+{ "team1": "Georgia State" , "team2": "West Virginia" , "location": "Morgantown, WV" , "date": "9/14/13" },
+
+{ "team1": "Georgia State" , "team2": "Jacksonville State" , "location": "Atlanta, GA" , "date": "9/21/13" },
+
+{ "team1": "Georgia State" , "team2": "Troy" , "location": "Atlanta, GA" , "date": "10/12/13" },
+
+{ "team1": "Georgia State" , "team2": "Texas State" , "location": "San Marcos, TX" , "date": "10/19/13" },
+
+{ "team1": "Georgia State" , "team2": "Louisiana-Monroe" , "location": "Monroe, LA" , "date": "10/26/13" },
+
+{ "team1": "Georgia State" , "team2": "Western Kentucky" , "location": "Atlanta, GA" , "date": "11/2/13" },
+
+{ "team1": "Georgia State" , "team2": "Louisiana-Lafayette" , "location": "Atlanta, GA" , "date": "11/16/13" },
+
+{ "team1": "Georgia State" , "team2": "Arkansas State" , "location": "Jonesboro, AR" , "date": "11/23/13" },
+
+{ "team1": "Georgia State" , "team2": "South Alabama" , "location": "Atlanta, GA" , "date": "11/30/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Savannah State" , "location": "Statesboro, GA" , "date": "8/31/13" },
+
+{ "team1": "Georgia Southern" , "team2": "St. Francis" , "location": "Loretto, PA" , "date": "9/7/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Wofford" , "location": "Spartanburg, SC" , "date": "9/14/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Chattanooga" , "location": "Statesboro, GA" , "date": "9/28/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Samford" , "location": "Homewood, AL" , "date": "10/5/13" },
+
+{ "team1": "Georgia Southern" , "team2": "The Citadel" , "location": "Statesboro, GA" , "date": "10/12/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Appalachian State" , "location": "Boone, NC" , "date": "10/26/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Furman" , "location": "Statesboro, GA" , "date": "11/2/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Western Carolina" , "location": "Statesboro, GA" , "date": "11/9/13" },
+
+{ "team1": "Georgia Southern" , "team2": "Elon" , "location": "Elon, NC" , "date": "11/16/13" },
+
+{ "team1": "Valdosta State" , "team2": "Fort Valley State" , "location": "Macon, GA" , "date": "9/7/13" },
+
+{ "team1": "Valdosta State" , "team2": "Shorter" , "location": "Valdosta, GA" , "date": "9/21/13" },
+
+{ "team1": "Valdosta State" , "team2": "Angelo State" , "location": "Valdosta, GA" , "date": "9/28/13" },
+
+{ "team1": "Valdosta State" , "team2": "Florida Tech" , "location": "Valdosta, GA" , "date": "10/5/13" },
+
+{ "team1": "Valdosta State" , "team2": "West Alabama" , "location": "Livingston, AL" , "date": "10/10/13" },
+
+{ "team1": "Valdosta State" , "team2": "West Georgia" , "location": "Carrollton, GA" , "date": "10/19/13" },
+
+{ "team1": "Valdosta State" , "team2": "North Alabama" , "location": "Valdosta, GA" , "date": "10/26/13" },
+
+{ "team1": "Valdosta State" , "team2": "Delta State" , "location": "Cleveland, MS" , "date": "11/2/13" },
+
+{ "team1": "Valdosta State" , "team2": "UNC-Pembroke" , "location": "Valdosta, GA" , "date": "11/7/13" },
+
+{ "team1": "Valdosta State" , "team2": "Texas A&M - Kingsville" , "location": "Kingsville, TX" , "date": "11/16/13" }
+
 ]
