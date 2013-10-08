@@ -122,7 +122,7 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
               }
             } 
         };
-    sockets.sockets.emit('data', output);
+   // sockets.sockets.emit('data', output);
       //spit out data to socket.io
      //sockets.sockets.emit('data', gamesArr);
   });
@@ -130,14 +130,14 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
 
 //Reset everything on a new day!
 //We don't want to keep data around from the previous day so reset everything.
-new cronJob('0 0 * 2 * *', function(){
+new cronJob('16 * * * * *', function(){
       //Reset the total
 
       //Clear out everything in the map
 
       //Send the update to the clients
       sockets.sockets.emit('data', output);
-  }, null, true);
+}, null, true);
 
 //Create the server
 server.listen(app.get('port'), function(){
