@@ -35,7 +35,7 @@ var output = { "data":gamesArr, "places":places };
 //Generic Express setup
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
-app.engine('html', require('ejs').renderFile);
+//app.engine('html', require('ejs').renderFile);
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -54,7 +54,7 @@ if ('development' == app.get('env')) {
 //Our only route! Render it with the array we're piping out
 app.get('/', function(req, res) {
   //res.render('results.html', { data: gamesArr });
-  res.json('results.json', {data: output});
+  res.json({data: output});
 });
 
 //Start a Socket.IO listen
