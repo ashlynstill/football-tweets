@@ -240,7 +240,8 @@ $('#tooltip').hide();
 
         function makeMap(places,chart,title,teams){
 
-            $('#map-holder h1').append(title);
+            $('#map-chart').empty();
+            $('#map-holder h1').empty().append(title);
             var w = $('#map-chart').width();
             var h = 600;
             var margin = {top: 40, right: 10, bottom: 20, left: 10},
