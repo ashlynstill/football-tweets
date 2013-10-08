@@ -292,7 +292,8 @@ $('#tooltip').hide();
                         g.append('circle')
                         .attr('cx', coords[0])
                         .attr('cy', coords[1])
-                        .attr('r', 3)
+                        .attr('r', 5)
+                        .style('opacity',0.8)
                         .attr('id', i)
                         .style('fill',  places[i].color)
                         .on("mouseover", function() {
