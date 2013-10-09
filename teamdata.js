@@ -4,12 +4,22 @@ var games = eval(fs.readFileSync('json/games.json')+'');
 var teams = eval(fs.readFileSync('json/teams.json')+ '');
 
 var today = new Date();
+var thisWeek = findWeek(today);
+
 //var dd = today.getDate();
 //var mm = today.getMonth()+1; //January is 0!
 
 //var yy = (today.getFullYear()).toString();
 //yy = yy.slice(2);
 //today = mm+'/'+dd+'/'+yy;
+
+var cronJob = require('cron').CronJob;
+var job = new cronJob('00 30 11 * * 1', function(){
+
+	today = new Date();
+	thisWeek = findWeek(today);
+
+} null, true);
 
 function findWeek( d ) { 
   var target  = new Date(d.valueOf());  
@@ -28,7 +38,7 @@ function makeDate( g ){
 }
 
 
-var thisWeek = findWeek(today);
+
 //games this week  - array of JSON objects of game data
 var gtw = [];
 
@@ -53,7 +63,6 @@ for (var i=0;i<games.length;i++){
 	var params_total = [];
 	var ids = [];
 
-
 	for (var i=0;i<ttw.length;i++){
 		var thisTeam = ttw[i];
 		for (var j=0;j<teams.length;j++){
@@ -73,6 +82,7 @@ for (var i=0;i<games.length;i++){
 
 	exports.teams = [ids,names,params_total,counts,colors,confs,mascots];
 	exports.games = gtw;
+	exports.today = today;
 
 
 

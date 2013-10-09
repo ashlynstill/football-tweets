@@ -4,8 +4,10 @@ $(function() {
 $('#tooltip').hide();
     var socket = io.connect(window.location.hostname);
     var date;
-    
+    $('body').prepend('<h1 id="date"></h1>');
     socket.on('data', function(inputdata) {
+        date = inputdata[2];
+        $('#date').empty().append(date);
         var gamedata, places, allteams;
         var team1 = [];
         var team2 = [];
@@ -18,7 +20,6 @@ $('#tooltip').hide();
         var axis_vals_sec = [];
         gamedata = inputdata[0];
         places = inputdata[1];
-       // allteams = inputdata[2];
         for (var v=0;v<gamedata.length;v++){
             if (gamedata[v].team1_count != undefined && gamedata[v].team2_count != undefined){
                 team1.push({ "x":v , "y":gamedata[v].team1_count, "team":gamedata[v].team1, "color":gamedata[v].team1_colors, "mascot":gamedata[v].team1_mascot, "conf":gamedata[v].team1_conf });    
