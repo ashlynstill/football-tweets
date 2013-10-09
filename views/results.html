@@ -13,6 +13,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script src="http://d3js.org/topojson.v1.min.js"></script>
 	<script src="/us.json"></script>
+	<!--[if lte IE 8]><script src="/javascripts/IE_script.js"></script><![endif]-->
 	<script src="/javascripts/script.js"></script>
   <style>
 
@@ -144,12 +145,26 @@
 		float:left;
 		margin:10px 0px 0px 10px;
 	}
+
+	.team p{
+		margin:0px;
+		padding:0px;
+		line-height:1.1em;
+	}
+	.slide{
+		margin:3px 0px;
+	}
+	.IEgames {
+		border-bottom: 1px solid #eee;
+		padding:10px 0px;
+	}
+
 	</style>
 </head>
 <body>
 	<div id="tooltip">
 	</div>
-	<div class="container">
+	<div class="container" id="content">
 		<div class="row">
 			<div class="col-sm-12" id="char-nav">
 				<ul>

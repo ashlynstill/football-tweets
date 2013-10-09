@@ -11,19 +11,10 @@ var teams = eval(fs.readFileSync('json/teams.json')+ '');
 //var yy = (today.getFullYear()).toString();
 //yy = yy.slice(2);
 //today = mm+'/'+dd+'/'+yy;
-var names = [];
-var mascots = [];
-var counts = [];
-var colors = [];
-var confs = [];
-var params_total = [];
-var ids = [];
+
 
 var today = new Date();
 var thisWeek = findWeek(today);
-
-var cronJob = require('cron').CronJob;
-
 
 	function findWeek( d ) { 
 	  var target  = new Date(d.valueOf());  
@@ -59,7 +50,13 @@ var cronJob = require('cron').CronJob;
 		}
 	}
 
-	   	
+	   	var names = [];
+		var mascots = [];
+		var counts = [];
+		var colors = [];
+		var confs = [];
+		var params_total = [];
+		var ids = [];
 	for (var i=0;i<ttw.length;i++){
 		var thisTeam = ttw[i];
 		for (var j=0;j<teams.length;j++){

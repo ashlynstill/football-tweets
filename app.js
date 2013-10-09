@@ -87,11 +87,11 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
 
   //We have a connection. Now watch the 'data' event for incomming tweets.
   stream.on('data', function(tweet) {
-
-    lowtweet = tweet.text.toString();
-    lowtweet = lowtweet.toLowerCase();
-    var fix_tweet = lowtweet.replace(lowtweet[lowtweet.search('"')],' ');
-    fix_tweet = fix_tweet.replace('\n',' ');
+    if (tweet.text != null && tweet.text != undefined){
+      lowtweet = tweet.text.toString();
+      lowtweet = tweet.text.toLowerCase();
+      var fix_tweet = lowtweet.replace(lowtweet[lowtweet.search('"')],' ');
+      fix_tweet = fix_tweet.replace('\n',' ');
       for (var i=0;i<watchSymbols.length;i++){
         var this_param = watchSymbols[i];
         for (var j=0;j<this_param.length;j++){
@@ -100,10 +100,11 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
             if (tweet.place !== null && tweet.coordinates != null){
               places.push({"team":teams[i], "conf":confs[i], "color":colors[i], "coords":tweet.coordinates.coordinates, "place":tweet.place.full_name});
             }
-            
           };
         };
       }; 
+    }
+    
 
       for (var i=0;i<gamesArr.length;i++){
             var team1 = gamesArr[i].team1;

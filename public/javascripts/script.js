@@ -4,7 +4,6 @@ $(function() {
 $('#tooltip').hide();
     var socket = io.connect(window.location.hostname);
     var date;
-    $('body').prepend('<h1 id="date"></h1>');
     socket.on('data', function(inputdata) {
         date = inputdata[2];
         var gamedata, places, allteams;
