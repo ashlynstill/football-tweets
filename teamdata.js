@@ -14,12 +14,13 @@ var thisWeek = findWeek(today);
 //today = mm+'/'+dd+'/'+yy;
 
 var cronJob = require('cron').CronJob;
-var job = new cronJob('00 30 11 * * 1', function(){
-
-	today = new Date();
+new cronJob('00 30 11 * * 1', function(){
+      //Send the update to the clients
+    today = new Date();
 	thisWeek = findWeek(today);
 
-} null, true);
+}, null, true);
+
 
 function findWeek( d ) { 
   var target  = new Date(d.valueOf());  
