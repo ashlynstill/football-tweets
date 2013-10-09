@@ -28,6 +28,8 @@ new cronJob('60 * * * * *', function(){
 	var today = new Date();
 	var thisWeek = findWeek(today);
 
+}, null, true);
+	
 	function findWeek( d ) { 
 	  var target  = new Date(d.valueOf());  
 	  var dayNr   = (d.getDay() + 6) % 7;  
@@ -77,10 +79,6 @@ new cronJob('60 * * * * *', function(){
 			}
 		}
 	}
-		
-
-}, null, true);
-
 
 
 	exports.teams = [ids,names,params_total,counts,colors,confs,mascots];
