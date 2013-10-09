@@ -62,15 +62,13 @@ var sockets = io.listen(server);
 
 //Set the sockets.io configuration.
 //THIS IS NECESSARY ONLY FOR HEROKU!
-/*sockets.configure(function() {
+sockets.configure(function() {
   sockets.set('transports', ['xhr-polling']);
   sockets.set('polling duration', 10);
-});*/
-
-//If the client just connected, give them fresh data!
-sockets.sockets.on('connection', function(socket) { 
-    socket.emit('data', output);
 });
+
+
+
 
 //oauth for twitter
 var t = new twitter({
@@ -128,13 +126,13 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
   });
 });
 
-//Reset everything on a new day!
-//We don't want to keep data around from the previous day so reset everything.
+//If the client just connected, give them fresh data!
+sockets.sockets.on('connection', function(socket) { 
+    socket.emit('data', output);
+});
+
+//Send out updated counts every 60 seconds
 new cronJob('60 * * * * *', function(){
-      //Reset the total
-
-      //Clear out everything in the map
-
       //Send the update to the clients
       sockets.sockets.emit('data', output);
 }, null, true);

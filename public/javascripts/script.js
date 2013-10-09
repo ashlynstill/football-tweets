@@ -241,7 +241,8 @@ $('#tooltip').hide();
         function makeMap(places,chart,title,teams){
 
             $('#map-chart').empty();
-            $('#map-holder h1').empty().append(title);
+            $('#map-holder h2').empty().append(title);
+            $('#map-holder h5').empty().append('*Note: Only tweets that have location data attached will appear on this map.');
             var w = $('#map-chart').width();
             var h = 600;
             var margin = {top: 40, right: 10, bottom: 20, left: 10},
