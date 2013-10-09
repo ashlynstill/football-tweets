@@ -50,10 +50,10 @@
 	  font: 11px sans-serif;
 	}
 
-	.axis line,
-	.axis path {
+	.x .axis line,
+	.x .axis path {
 	  fill: none;
-	  stroke: none;
+	  stroke: #ccc;
 	  shape-rendering: crispEdges;
 	}
 	#tooltip {
@@ -158,6 +158,9 @@
 		border-bottom: 1px solid #eee;
 		padding:10px 0px;
 	}
+	h4{
+		line-height:1.4em;
+	}
 
 	</style>
 </head>
@@ -165,16 +168,18 @@
 	<div id="tooltip">
 	</div>
 	<div class="container">
-		<h2>What's the buzz on college football this weekend?</h2>
-		<h2>We're tracking tweets about the biggest college games this weekend in the Southeast. Check out our results below to see which games are being talked about the most. How much buzz is your team getting?</h2>
-		<div id="byline">Application by <a href="mailto:astill@ajc.com" target="_blank">Ashlyn Still</a></div>
+		<div class="row">
+				<h2>What's the buzz on college football this weekend?</h2>
+				<h4>We're tracking tweets about the biggest college games this weekend in the Southeast. Check out our results below to see which games are being talked about the most. How much buzz is your team getting?</h4>
+				<div id="byline">Application by <a href="mailto:astill@ajc.com" target="_blank">Ashlyn Still</a></div>
+		</div>
 	</div>
 	<div class="container" id="content">
 		<div class="row">
 			<div class="col-sm-12" id="char-nav">
 				<ul>
 					<li id="all"><p>All games</p></li>
-					<li id="conf"><p>Conferences</p></li>
+					<li id="conf"><p>SEC vs. ACC</p></li>
 					<li id="map"><p>Map</p></li>
 				</ul>
 			</div>
@@ -184,9 +189,9 @@
 				<div class="row" id="all-chart">
 				</div>
 				<div class="row" id="conf-chart">
-					<div class="col-sm-6 split-charts" id="acc-chart">
-					</div>
 					<div class="col-sm-6 split-charts" id="sec-chart">
+					</div>
+					<div class="col-sm-6 split-charts" id="acc-chart">
 					</div>
 				</div>
 				<div class="row">

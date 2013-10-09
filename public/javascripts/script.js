@@ -152,7 +152,7 @@ $('#tooltip').hide();
             var xAxis = d3.svg.axis()
                 .scale(xScale)
                 //.tickValues(xScale(axis_vals))
-                .tickSize(5)
+                .tickSize(1)
                 .tickPadding(6)
                 .orient("bottom");
 
