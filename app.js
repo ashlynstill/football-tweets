@@ -97,7 +97,7 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
         for (var j=0;j<this_param.length;j++){
           if (lowtweet.search(this_param[j]) >= 0){
             count[i]++;
-            if (tweet.place !== null && tweet.coordinates != null){
+            if (tweet.place.country_code === 'US' && tweet.coordinates != null){
               places.push({"team":teams[i], "conf":confs[i], "color":colors[i], "coords":tweet.coordinates.coordinates, "place":tweet.place.full_name});
             }
           };

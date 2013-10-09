@@ -99,7 +99,7 @@ $('#tooltip').hide();
 
         function makeChart(team1,team2,chart,axis_vals,title){
             $('#'+chart).empty();
-            $('#'+chart).append('<h1 class="title">'+title+'</h1>');
+            $('#'+chart).append('<h2 class="title">'+title+'</h2>');
             var w = $('#'+chart).width();
             var h = 700;
             var margin = {top: 40, right: 10, bottom: 20, left: 10},
