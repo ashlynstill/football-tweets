@@ -200,8 +200,8 @@ $('#tooltip').hide();
                 .on("mouseover", function(d,i) {
                     $('#tooltip').fadeIn();
                     //Get this bar's x/y values, then augment for the tooltip
-                    var xPosition = event.pageX-40;
-                    var yPosition = event.pageY+20;
+                    var xPosition = d3.event.pageX-40;
+                    var yPosition = d3.event.pageY+20;
                     //Update Tooltip Position & value
                     d3.select("#tooltip")
                         .style("left", xPosition+'px')
@@ -299,9 +299,9 @@ $('#tooltip').hide();
                         .on("mouseover", function() {
                             $('#tooltip').fadeIn();
                             //Get this bar's x/y values, then augment for the tooltip
-                            var xPosition = event.pageX-40;
-                            var yPosition = event.pageY+20;
-                            var dotID = event.target.id;
+                            var xPosition = d3.event.pageX-40;
+                            var yPosition = d3.event.pageY+20;
+                            var dotID = d3.event.target.id;
                             //Update Tooltip Position & value
                             d3.select("#tooltip")
                                 .style("left", xPosition+'px')
