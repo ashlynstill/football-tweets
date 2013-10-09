@@ -7,7 +7,6 @@ $('#tooltip').hide();
     $('body').prepend('<h1 id="date"></h1>');
     socket.on('data', function(inputdata) {
         date = inputdata[2];
-        $('#date').empty().append(date);
         var gamedata, places, allteams;
         var team1 = [];
         var team2 = [];

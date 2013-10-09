@@ -24,14 +24,7 @@ var thisWeek = findWeek(today);
 
 var cronJob = require('cron').CronJob;
 
-//new cronJob('00 30 11 * * 1', function(){
-new cronJob('60 * * * * *', function(){
-      //Send the update to the clients
-	today = new Date();
-	thisWeek = findWeek(today);	
 
-}, null, true);
-	
 	function findWeek( d ) { 
 	  var target  = new Date(d.valueOf());  
 	  var dayNr   = (d.getDay() + 6) % 7;  
