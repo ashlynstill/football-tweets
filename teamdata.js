@@ -19,14 +19,16 @@ var confs = [];
 var params_total = [];
 var ids = [];
 
+var today = new Date();
+var thisWeek = findWeek(today);
 
 var cronJob = require('cron').CronJob;
 
 //new cronJob('00 30 11 * * 1', function(){
 new cronJob('60 * * * * *', function(){
       //Send the update to the clients
-	var today = new Date();
-	var thisWeek = findWeek(today);
+	today = new Date();
+	thisWeek = findWeek(today);	
 
 }, null, true);
 	
