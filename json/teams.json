@@ -94,6 +94,18 @@
 
 { "school": "Old Dominion" , "mascot": "Monarchs" , "color": "#002B5F" , "conference": "Colonial Athletic Association" , "search": ["old dominion football","odu football","ODUfootball","odufb","odu monarchs","old dominion monarch"] },
 
+{ "school": "BYU" , "mascot": "Cougars" , "color": "#002255" , "conference": "Independent" , "search": ["byufootball","byucougars","#byu","byu cougars","byu football","gobyu"] },
+
+{ "school": "Alabama A&M" , "mascot": "Bulldogs" , "color": "#750000" , "conference": "Southwestern" , "search": ["#aamu","aamu football","aamufb"] },
+
+{ "school": "New Mexico State" , "mascot": "Aggies" , "color": "#CC2233" , "conference": "Independent" , "search": ["#nmstateaggies","nmsu football","new mexico state football","#aggieup","#nmstate","nmstate football","nmsu aggies","new mexico state aggies"] },
+
+{ "school": "Navy" , "mascot": "Midshipmen" , "color": "#000080" , "conference": "Independent" , "search": ["#NavyFootball","#GoNavy","midshipmen football","navy football"] },
+
+{ "school": "Notre Dame" , "mascot": "Fighting Irish" , "color": "#002b5c" , "conference": "Independent" , "search": ["#goirish","fighting irish","notre dame football","fightingirish","#NotreDame","go fighting irish","gofightingirish"] },
+
+{ "school": "Florida Atlantic" , "mascot": "Owls" , "color": "#003366" , "conference": "C-USA" , "search": ["FAU_football","#owlnation","FAU football","florida atlantic football","florida atlantic owls","fau #goowls"] },
+
 { "school": "The Citadel" , "mascot": "Bulldogs" , "color": "#4189DD" , "conference": "Southern" , "search": ["citadel football","citadelfootball","#TheCitadel","citadel bulldogs"] }
 
 ]
