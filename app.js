@@ -121,6 +121,7 @@ t.stream('statuses/filter', { track: watchSymbols }, function(stream) {
                 gamesArr[i].team2_conf = results[4][j];
                 gamesArr[i].team2_count = results[1][j];
               }
+              gamesArr[i].total_count = gamesArr[i].team1_count + gamesArr[i].team2_count;
             } 
         };
    // sockets.sockets.emit('data', output);

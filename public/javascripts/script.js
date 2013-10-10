@@ -18,6 +18,12 @@ $('#tooltip').hide();
         var axis_vals_sec = [];
         gamedata = inputdata[0];
         places = inputdata[1];
+
+        gamedata.forEach(function(d) {
+            d.total = d.team1_count + d.team2_count; 
+        });
+        gamedata.sort(function(a, b) { return b.total - a.total; });
+
         for (var v=0;v<gamedata.length;v++){
             if (gamedata[v].team1_count != undefined && gamedata[v].team2_count != undefined){
                 team1.push({ "x":v , "y":gamedata[v].team1_count, "team":gamedata[v].team1, "color":gamedata[v].team1_colors, "mascot":gamedata[v].team1_mascot, "conf":gamedata[v].team1_conf });    
@@ -111,8 +117,8 @@ $('#tooltip').hide();
             //Create SVG element
             var svg = d3.select('#'+chart)
                         .append("svg")
-                        .attr("width", svg_width)
-                        .attr("height", svg_height);
+                        .attr("width", width)
+                        .attr("height", h);
 
             var dataset = [team1,team2];
             var stack = d3.layout.stack();
@@ -233,6 +239,14 @@ $('#tooltip').hide();
                 .attr("x", 100)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end");  
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 0 + (margin.left*5))
+                .attr("x",0 - (height / 2))
+                .attr("dy", "1em")
+                .style("text-anchor", "middle")
+                .text("# of tweets");
         };
 
 
@@ -241,6 +255,7 @@ $('#tooltip').hide();
 
             $('#map-chart').empty();
             $('#map-holder h2').empty().append(title);
+            $('#map-holder p').empty().append('<b>Roll over the dots to see which teams were a tweet topic from that location.</b>');
             $('#map-holder h5').empty().append('*Note: Only tweets that have location data attached will appear on this map.');
             var w = $('#map-chart').width();
             var h = 600;
