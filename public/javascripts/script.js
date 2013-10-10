@@ -97,7 +97,7 @@ $('#tooltip').hide();
                     $('#map-sorter').show();
                     var chart = id+'-chart';
                     var title
-                    makeMap(places,chart,'Game tweets by location');
+                    makeMap(gamedata,chart,'Game tweets by location');
                 }
             })
         })
@@ -251,7 +251,7 @@ $('#tooltip').hide();
 
 
 
-        function makeMap(places,chart,title,teams){
+        function makeMap(gamedata,chart,title,teams){
 
             $('#map-chart').empty();
             $('#map-holder h2').empty().append(title);
@@ -301,6 +301,7 @@ $('#tooltip').hide();
                   .attr("d", path);
 
                 for (var i=0;i<places.length;i++){
+                    console.log(places[i].coords);
                     var coords = projection(places[i].coords);
                     console.log(coords);
                     if(coords != null){
