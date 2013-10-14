@@ -3,7 +3,6 @@
 <head>
 	<title>Football tweets</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<base target="_parent" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
@@ -16,13 +15,14 @@
 	<script src="/us.json"></script>
 	<!--[if lte IE 8]><script src="/javascripts/IE_script.js"></script><![endif]-->
 	<script src="/javascripts/script.js"></script>
+	<script src="/javascripts/flatpage_stubs.js+v2"></script>
   <style>
 
   rect{
-  	opacity:0.8;
+  	opacity:1.0;
   }
   rect:hover{
-  	opacity:1.0;
+  	opacity:0.9;
   }
 
   .background {
@@ -161,9 +161,14 @@
 	.container {
 		max-width:960px;
 	}
+
 	p{
-		font-size:14px;
+		font-size:12px;
 	}
+	#map-text{
+		font-size:16px;
+	}
+
 
 	</style>
 </head>
@@ -175,7 +180,7 @@
 				<h2>What's the Twitter buzz on college football this weekend?</h2>
 				<p>It’s another big week of college football games in the Southeast. Which games involving SEC and ACC teams are getting the most buzz on Twitter? We’ve tracked the most recent tweets across the nation to find out.</p>
 
-				<p>You can view this interactive in 3 different ways: From highest to lowest on all games; categorized by SEC or ACC school; and where the tweets are originating in the U.S.</p>
+				<p>You can view this interactive in 3 different ways: From highest to lowest on all games; categorized by SEC or ACC school; or by game location.</p>
 
 				<p>How much buzz is your team getting?</p>
 				<div id="byline">Application by <a href="mailto:astill@ajc.com" target="_blank">Ashlyn Still</a></div>
@@ -206,7 +211,6 @@
 						<div class="row">
 							<h2 class="title"></h2>
 							<p id="map-text"></p>
-							<h5 class="note"></h5>
 						</div>
 						<div class="row" id="map-sorter">
 						</div>	
@@ -216,5 +220,21 @@
 				</div>
 			</div>
 		</div>
+
+	<script>
+	// Have to add flatpage_stubs.js above this script
+	var i = 0;
+	document.body.onclick = function(e){
+		i += 1;
+		// Track in metrics
+		cmg.s_coxnews.utilities.track_event(42, null, ["eVar40", "interactive_footballtweets"], ["prop42", "eVar42", "ajc"], "Interaction in College Football Tweets");
+
+		if(i === 3){
+			i = 0;
+			// Refresh ads
+			Adgeletti.refresh();
+		}
+	}
+	</script>
 </body>
 </html>

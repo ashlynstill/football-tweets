@@ -1,402 +1,400 @@
 //Your JSON output will go here!
 [
       
-{ "team1": "Alabama" , "team2": "Virginia Tech" , "location": "84.3900, 33.7550" , "date": "8/31/13" },
+{ "team1": "Alabama" , "team2": "Virginia Tech" , "location": "-84.3900, 33.7550" , "date": "8/31/13" },
 
-{ "team1": "Alabama" , "team2": "Texas A&M" , "location": "96.3144, 30.6014" , "date": "09/14/13" },
+{ "team1": "Alabama" , "team2": "Texas A&M" , "location": "-96.3144, 30.6014" , "date": "09/14/13" },
 
-{ "team1": "Alabama" , "team2": "Colorado State" , "location": "87.5346, 33.2065" , "date": "9/21/13" },
+{ "team1": "Alabama" , "team2": "Colorado State" , "location": "-87.5346, 33.2065" , "date": "9/21/13" },
 
-{ "team1": "Alabama" , "team2": "Ole Miss" , "location": "87.5346, 33.2065" , "date": "9/28/13" },
+{ "team1": "Alabama" , "team2": "Ole Miss" , "location": "-87.5346, 33.2065" , "date": "9/28/13" },
 
-{ "team1": "Alabama" , "team2": "Georgia State" , "location": "87.5346, 33.2065" , "date": "10/5/13" },
+{ "team1": "Alabama" , "team2": "Georgia State" , "location": "-87.5346, 33.2065" , "date": "10/5/13" },
 
-{ "team1": "Alabama" , "team2": "Kentucky" , "location": "84.4947, 38.0297" , "date": "10/12/13" },
+{ "team1": "Alabama" , "team2": "Kentucky" , "location": "-84.4947, 38.0297" , "date": "10/12/13" },
 
-{ "team1": "Alabama" , "team2": "Arkansas" , "location": "87.5346, 33.2065" , "date": "10/19/13" },
+{ "team1": "Alabama" , "team2": "Arkansas" , "location": "-87.5346, 33.2065" , "date": "10/19/13" },
 
-{ "team1": "Alabama" , "team2": "Tennessee" , "location": "87.5346, 33.2065" , "date": "10/26/13" },
+{ "team1": "Alabama" , "team2": "Tennessee" , "location": "-87.5346, 33.2065" , "date": "10/26/13" },
 
-{ "team1": "Alabama" , "team2": "LSU" , "location": "87.5346, 33.2065" , "date": "11/9/13" },
+{ "team1": "Alabama" , "team2": "LSU" , "location": "-87.5346, 33.2065" , "date": "11/9/13" },
 
-{ "team1": "Alabama" , "team2": "Mississippi State" , "location": "88.8200, 33.4625" , "date": "11/16/13" },
+{ "team1": "Alabama" , "team2": "Mississippi State" , "location": "-88.8200, 33.4625" , "date": "11/16/13" },
 
-{ "team1": "Alabama" , "team2": "Chattanooga" , "location": "87.5346, 33.2065" , "date": "11/23/13" },
+{ "team1": "Alabama" , "team2": "Chattanooga" , "location": "-87.5346, 33.2065" , "date": "11/23/13" },
 
-{ "team1": "Alabama" , "team2": "Auburn" , "location": "85.4808, 32.5977" , "date": "11/30/13" },
+{ "team1": "Alabama" , "team2": "Auburn" , "location": "-85.4808, 32.5977" , "date": "11/30/13" },
 
-{ "team1": "Auburn" , "team2": "Washington State" , "location": "85.4808, 32.5977" , "date": "8/31/13" },
+{ "team1": "Auburn" , "team2": "Washington State" , "location": "-85.4808, 32.5977" , "date": "8/31/13" },
 
-{ "team1": "Auburn" , "team2": "Arkansas State" , "location": "85.4808, 32.5977" , "date": "9/7/13" },
+{ "team1": "Auburn" , "team2": "Arkansas State" , "location": "-85.4808, 32.5977" , "date": "9/7/13" },
 
-{ "team1": "Auburn" , "team2": "Mississippi State" , "location": "85.4808, 32.5977" , "date": "9/14/13" },
+{ "team1": "Auburn" , "team2": "Mississippi State" , "location": "-85.4808, 32.5977" , "date": "9/14/13" },
 
-{ "team1": "Auburn" , "team2": "LSU" , "location": "91.1400, 30.4500" , "date": "9/21/13" },
+{ "team1": "Auburn" , "team2": "LSU" , "location": "-91.1400, 30.4500" , "date": "9/21/13" },
 
-{ "team1": "Auburn" , "team2": "Ole Miss" , "location": "85.4808, 32.5977" , "date": "10/5/13" },
+{ "team1": "Auburn" , "team2": "Ole Miss" , "location": "-85.4808, 32.5977" , "date": "10/5/13" },
 
-{ "team1": "Auburn" , "team2": "Western Carolina" , "location": "85.4808, 32.5977" , "date": "10/12/13" },
+{ "team1": "Auburn" , "team2": "Western Carolina" , "location": "-85.4808, 32.5977" , "date": "10/12/13" },
 
-{ "team1": "Auburn" , "team2": "Texas A&M" , "location": "96.3144, 30.6014" , "date": "10/19/13" },
+{ "team1": "Auburn" , "team2": "Texas A&M" , "location": "-96.3144, 30.6014" , "date": "10/19/13" },
 
-{ "team1": "Auburn" , "team2": "Florida Atlantic" , "location": "85.4808, 32.5977" , "date": "10/26/13" },
+{ "team1": "Auburn" , "team2": "Florida Atlantic" , "location": "-85.4808, 32.5977" , "date": "10/26/13" },
 
-{ "team1": "Auburn" , "team2": "Arkansas" , "location": "94.1608, 36.0764" , "date": "11/2/13" },
+{ "team1": "Auburn" , "team2": "Arkansas" , "location": "-94.1608, 36.0764" , "date": "11/2/13" },
 
-{ "team1": "Auburn" , "team2": "Tennessee" , "location": "83.9422, 35.9728" , "date": "11/9/13" },
+{ "team1": "Auburn" , "team2": "Tennessee" , "location": "-83.9422, 35.9728" , "date": "11/9/13" },
 
-{ "team1": "Auburn" , "team2": "Georgia" , "location": "85.4808, 32.5977" , "date": "11/16/13" },
+{ "team1": "Auburn" , "team2": "Georgia" , "location": "-85.4808, 32.5977" , "date": "11/16/13" },
 
-{ "team1": "Florida" , "team2": "Toledo" , "location": "82.3250, 29.6520" , "date": "8/31/13" },
+{ "team1": "Florida" , "team2": "Toledo" , "location": "-82.3250, 29.6520" , "date": "8/31/13" },
 
-{ "team1": "Florida" , "team2": "Miami" , "location": "80.2699, 25.9421" , "date": "9/7/13" },
+{ "team1": "Florida" , "team2": "Miami" , "location": "-80.2699, 25.9421" , "date": "9/7/13" },
 
-{ "team1": "Florida" , "team2": "Tennessee" , "location": "82.3250, 29.6520" , "date": "9/21/13" },
+{ "team1": "Florida" , "team2": "Tennessee" , "location": "-82.3250, 29.6520" , "date": "9/21/13" },
 
-{ "team1": "Florida" , "team2": "Kentucky" , "location": "84.4947, 38.0297" , "date": "9/28/13" },
+{ "team1": "Florida" , "team2": "Kentucky" , "location": "-84.4947, 38.0297" , "date": "9/28/13" },
 
-{ "team1": "Florida" , "team2": "Arkansas" , "location": "82.3250, 29.6520" , "date": "10/5/13" },
+{ "team1": "Florida" , "team2": "Arkansas" , "location": "-82.3250, 29.6520" , "date": "10/5/13" },
 
-{ "team1": "Florida" , "team2": "LSU" , "location": "91.1400, 30.4500" , "date": "10/12/13" },
+{ "team1": "Florida" , "team2": "LSU" , "location": "-91.1400, 30.4500" , "date": "10/12/13" },
 
-{ "team1": "Florida" , "team2": "Missouri" , "location": "92.3339, 38.9483" , "date": "10/19/13" },
+{ "team1": "Florida" , "team2": "Missouri" , "location": "-92.3339, 38.9483" , "date": "10/19/13" },
 
-{ "team1": "Florida" , "team2": "Georgia" , "location": "81.6614, 30.3369" , "date": "11/2/13" },
+{ "team1": "Florida" , "team2": "Georgia" , "location": "-81.6614, 30.3369" , "date": "11/2/13" },
 
-{ "team1": "Florida" , "team2": "Vanderbilt" , "location": "82.3250, 29.6520" , "date": "11/9/13" },
+{ "team1": "Florida" , "team2": "Vanderbilt" , "location": "-82.3250, 29.6520" , "date": "11/9/13" },
 
-{ "team1": "Florida" , "team2": "South Carolina" , "location": "81.0353, 34.0008" , "date": "11/16/13" },
+{ "team1": "Florida" , "team2": "South Carolina" , "location": "-81.0353, 34.0008" , "date": "11/16/13" },
 
-{ "team1": "Florida" , "team2": "Georgia Southern" , "location": "82.3250, 29.6520" , "date": "11/23/13" },
+{ "team1": "Florida" , "team2": "Georgia Southern" , "location": "-82.3250, 29.6520" , "date": "11/23/13" },
 
-{ "team1": "Florida" , "team2": "Florida State" , "location": "82.3250, 29.6520" , "date": "11/30/13" },
+{ "team1": "Florida" , "team2": "Florida State" , "location": "-82.3250, 29.6520" , "date": "11/30/13" },
 
-{ "team1": "Tennesee" , "team2": "Austin Peay" , "location": "83.9422, 35.9728" , "date": "8/31/13" },
+{ "team1": "Tennesee" , "team2": "Austin Peay" , "location": "-83.9422, 35.9728" , "date": "8/31/13" },
 
-{ "team1": "Tennessee" , "team2": "Western Kentucky" , "location": "83.9422, 35.9728" , "date": "9/7/13" },
+{ "team1": "Tennessee" , "team2": "Western Kentucky" , "location": "-83.9422, 35.9728" , "date": "9/7/13" },
 
-{ "team1": "Tennessee" , "team2": "South Alabama" , "location": "83.9422, 35.9728" , "date": "9/28/13" },
+{ "team1": "Tennessee" , "team2": "South Alabama" , "location": "-83.9422, 35.9728" , "date": "9/28/13" },
 
-{ "team1": "Tennessee" , "team2": "Georgia" , "location": "83.9422, 35.9728" , "date": "10/5/13" },
+{ "team1": "Tennessee" , "team2": "Georgia" , "location": "-83.9422, 35.9728" , "date": "10/5/13" },
 
-{ "team1": "Tennessee" , "team2": "South Carolina" , "location": "83.9422, 35.9728" , "date": "10/19/13" },
+{ "team1": "Tennessee" , "team2": "South Carolina" , "location": "-83.9422, 35.9728" , "date": "10/19/13" },
 
-{ "team1": "Tennessee" , "team2": "Missouri" , "location": "92.3339, 38.9483" , "date": "11/2/13" },
+{ "team1": "Tennessee" , "team2": "Missouri" , "location": "-92.3339, 38.9483" , "date": "11/2/13" },
 
-{ "team1": "Tennessee" , "team2": "Vanderbilt" , "location": "83.9422, 35.9728" , "date": "11/23/13" },
+{ "team1": "Tennessee" , "team2": "Vanderbilt" , "location": "-83.9422, 35.9728" , "date": "11/23/13" },
 
-{ "team1": "Tennessee" , "team2": "Kentucky" , "location": "84.4947, 38.0297" , "date": "11/30/13" },
+{ "team1": "Tennessee" , "team2": "Kentucky" , "location": "-84.4947, 38.0297" , "date": "11/30/13" },
 
-{ "team1": "Missouri" , "team2": "Murray State" , "location": "92.3339, 38.9483" , "date": "8/31/13" },
+{ "team1": "Missouri" , "team2": "Murray State" , "location": "-92.3339, 38.9483" , "date": "8/31/13" },
 
-{ "team1": "Missouri" , "team2": "Toledo" , "location": "92.3339, 38.9483" , "date": "9/7/13" },
+{ "team1": "Missouri" , "team2": "Toledo" , "location": "-92.3339, 38.9483" , "date": "9/7/13" },
 
-{ "team1": "Missouri" , "team2": "Arkansas State" , "location": "92.3339, 38.9483" , "date": "9/28/13" },
+{ "team1": "Missouri" , "team2": "Arkansas State" , "location": "-92.3339, 38.9483" , "date": "9/28/13" },
 
-{ "team1": "Missouri" , "team2": "Vanderbilt" , "location": "86.7833, 36.1667" , "date": "10/5/13" },
+{ "team1": "Missouri" , "team2": "Vanderbilt" , "location": "-86.7833, 36.1667" , "date": "10/5/13" },
 
-{ "team1": "Missouri" , "team2": "Georgia" , "location": "83.3833, 33.9500" , "date": "10/12/13" },
+{ "team1": "Missouri" , "team2": "Georgia" , "location": "-83.3833, 33.9500" , "date": "10/12/13" },
 
-{ "team1": "Missouri" , "team2": "South Carolina" , "location": "92.3339, 38.9483" , "date": "10/26/13" },
+{ "team1": "Missouri" , "team2": "South Carolina" , "location": "-92.3339, 38.9483" , "date": "10/26/13" },
 
-{ "team1": "Missouri" , "team2": "Kentucky" , "location": "84.4947, 38.0297" , "date": "11/9/13" },
+{ "team1": "Missouri" , "team2": "Kentucky" , "location": "-84.4947, 38.0297" , "date": "11/9/13" },
 
-{ "team1": "Missouri" , "team2": "Ole Miss" , "location": "89.5261, 34.3597" , "date": "11/23/13" },
+{ "team1": "Missouri" , "team2": "Ole Miss" , "location": "-89.5261, 34.3597" , "date": "11/23/13" },
 
-{ "team1": "Missouri" , "team2": "Texas A&M" , "location": "92.3339, 38.9483" , "date": "11/30/13" },
+{ "team1": "Missouri" , "team2": "Texas A&M" , "location": "-92.3339, 38.9483" , "date": "11/30/13" },
 
-{ "team1": "Kentucky" , "team2": "Western Kentucky" , "location": "86.7833, 36.1667" , "date": "8/31/13" },
+{ "team1": "Kentucky" , "team2": "Western Kentucky" , "location": "-86.7833, 36.1667" , "date": "8/31/13" },
 
-{ "team1": "Kentucky" , "team2": "Miami (OH)" , "location": "84.4947, 38.0297" , "date": "9/7/13" },
+{ "team1": "Kentucky" , "team2": "Miami (OH)" , "location": "-84.4947, 38.0297" , "date": "9/7/13" },
 
-{ "team1": "Kentucky" , "team2": "Louisville" , "location": "84.4947, 38.0297" , "date": "9/14/13" },
+{ "team1": "Kentucky" , "team2": "Louisville" , "location": "-84.4947, 38.0297" , "date": "9/14/13" },
 
-{ "team1": "Kentucky" , "team2": "South Carolina" , "location": "81.0353, 34.0008" , "date": "10/5/13" },
+{ "team1": "Kentucky" , "team2": "South Carolina" , "location": "-81.0353, 34.0008" , "date": "10/5/13" },
 
-{ "team1": "Kentucky" , "team2": "Mississippi State" , "location": "88.8200, 33.4625" , "date": "10/24/13" },
+{ "team1": "Kentucky" , "team2": "Mississippi State" , "location": "-88.8200, 33.4625" , "date": "10/24/13" },
 
-{ "team1": "Kentucky" , "team2": "Alabama State" , "location": "84.4947, 38.0297" , "date": "11/2/13" },
+{ "team1": "Kentucky" , "team2": "Alabama State" , "location": "-84.4947, 38.0297" , "date": "11/2/13" },
 
-{ "team1": "Kentucky" , "team2": "Vanderbilt" , "location": "86.7833, 36.1667" , "date": "11/16/13" },
+{ "team1": "Kentucky" , "team2": "Vanderbilt" , "location": "-86.7833, 36.1667" , "date": "11/16/13" },
 
-{ "team1": "Kentucky" , "team2": "Georgia" , "location": "83.3833, 33.9500" , "date": "11/23/13" },
+{ "team1": "Kentucky" , "team2": "Georgia" , "location": "-83.3833, 33.9500" , "date": "11/23/13" },
 
-{ "team1": "Vanderbilt" , "team2": "Ole Miss" , "location": "86.7833, 36.1667" , "date": "8/29/13" },
+{ "team1": "Vanderbilt" , "team2": "Ole Miss" , "location": "-86.7833, 36.1667" , "date": "8/29/13" },
 
-{ "team1": "Vanderbilt" , "team2": "Austin Peay" , "location": "86.7833, 36.1667" , "date": "9/7/13" },
+{ "team1": "Vanderbilt" , "team2": "Austin Peay" , "location": "-86.7833, 36.1667" , "date": "9/7/13" },
 
-{ "team1": "Vanderbilt" , "team2": "South Carolina" , "location": "81.0353, 34.0008" , "date": "9/14/13" },
+{ "team1": "Vanderbilt" , "team2": "South Carolina" , "location": "-81.0353, 34.0008" , "date": "9/14/13" },
 
-{ "team1": "Vanderbilt" , "team2": "UAB" , "location": "86.7833, 36.1667" , "date": "9/28/13" },
+{ "team1": "Vanderbilt" , "team2": "UAB" , "location": "-86.7833, 36.1667" , "date": "9/28/13" },
 
-{ "team1": "Vanderbilt" , "team2": "Georgia" , "location": "86.7833, 36.1667" , "date": "10/19/13" },
+{ "team1": "Vanderbilt" , "team2": "Georgia" , "location": "-86.7833, 36.1667" , "date": "10/19/13" },
 
-{ "team1": "Vanderbilt" , "team2": "Texas A&M" , "location": "96.3144, 30.6014" , "date": "10/26/13" },
+{ "team1": "Vanderbilt" , "team2": "Texas A&M" , "location": "-96.3144, 30.6014" , "date": "10/26/13" },
 
-{ "team1": "Vanderbilt" , "team2": "Wake Forest" , "location": "86.7833, 36.1667" , "date": "11/30/13" },
+{ "team1": "Vanderbilt" , "team2": "Wake Forest" , "location": "-86.7833, 36.1667" , "date": "11/30/13" },
 
-{ "team1": "Arkansas" , "team2": "Louisiana" , "location": "94.1608, 36.0764" , "date": "8/31/13" },
+{ "team1": "Arkansas" , "team2": "Louisiana" , "location": "-94.1608, 36.0764" , "date": "8/31/13" },
 
-{ "team1": "Arkansas" , "team2": "Samford" , "location": "92.3311, 34.7361" , "date": "9/7/13" },
+{ "team1": "Arkansas" , "team2": "Samford" , "location": "-92.3311, 34.7361" , "date": "9/7/13" },
 
-{ "team1": "Arkansas" , "team2": "Southern Miss" , "location": "94.1608, 36.0764" , "date": "9/14/13" },
+{ "team1": "Arkansas" , "team2": "Southern Miss" , "location": "-94.1608, 36.0764" , "date": "9/14/13" },
 
-{ "team1": "Arkansas" , "team2": "Texas A&M" , "location": "94.1608, 36.0764" , "date": "9/28/13" },
+{ "team1": "Arkansas" , "team2": "Texas A&M" , "location": "-94.1608, 36.0764" , "date": "9/28/13" },
 
-{ "team1": "Arkansas" , "team2": "South Carolina" , "location": "94.1608, 36.0764" , "date": "10/12/13" },
+{ "team1": "Arkansas" , "team2": "South Carolina" , "location": "-94.1608, 36.0764" , "date": "10/12/13" },
 
-{ "team1": "Arkansas" , "team2": "Ole Miss" , "location": "89.5261, 34.3597" , "date": "11/9/13" },
+{ "team1": "Arkansas" , "team2": "Ole Miss" , "location": "-89.5261, 34.3597" , "date": "11/9/13" },
 
-{ "team1": "Arkansas" , "team2": "Mississippi State" , "location": "92.3311, 34.7361" , "date": "11/23/13" },
+{ "team1": "Arkansas" , "team2": "Mississippi State" , "location": "-92.3311, 34.7361" , "date": "11/23/13" },
 
-{ "team1": "Arkansas" , "team2": "LSU" , "location": "91.1400, 30.4500" , "date": "11/29/13" },
+{ "team1": "Arkansas" , "team2": "LSU" , "location": "-91.1400, 30.4500" , "date": "11/29/13" },
 
-{ "team1": "Georgia" , "team2": "Clemson" , "location": "82.8392, 34.6783" , "date": "8/31/13" },
+{ "team1": "Georgia" , "team2": "Clemson" , "location": "-82.8392, 34.6783" , "date": "8/31/13" },
 
-{ "team1": "Georgia" , "team2": "South Carolina" , "location": "83.3833, 33.9500" , "date": "9/7/13" },
+{ "team1": "Georgia" , "team2": "South Carolina" , "location": "-83.3833, 33.9500" , "date": "9/7/13" },
 
-{ "team1": "Georgia" , "team2": "North Texas" , "location": "83.3833, 33.9500" , "date": "9/21/13" },
+{ "team1": "Georgia" , "team2": "North Texas" , "location": "-83.3833, 33.9500" , "date": "9/21/13" },
 
-{ "team1": "Georgia" , "team2": "LSU" , "location": "83.3833, 33.9500" , "date": "9/28/13" },
+{ "team1": "Georgia" , "team2": "LSU" , "location": "-83.3833, 33.9500" , "date": "9/28/13" },
 
-{ "team1": "Georgia" , "team2": "Appalachian State" , "location": "83.3833, 33.9500" , "date": "11/9/13" },
+{ "team1": "Georgia" , "team2": "Appalachian State" , "location": "-83.3833, 33.9500" , "date": "11/9/13" },
 
-{ "team1": "Georgia" , "team2": "Georgia Tech" , "location": "84.3900, 33.7550" , "date": "11/30/13" },
+{ "team1": "Georgia" , "team2": "Georgia Tech" , "location": "-84.3900, 33.7550" , "date": "11/30/13" },
 
-{ "team1": "Texas A&M" , "team2": "Rice" , "location": "96.3144, 30.6014" , "date": "8/31/13" },
+{ "team1": "Texas A&M" , "team2": "Rice" , "location": "-96.3144, 30.6014" , "date": "8/31/13" },
 
-{ "team1": "Texas A&M" , "team2": "Sam Houston State" , "location": "96.3144, 30.6014" , "date": "9/7/13" },
+{ "team1": "Texas A&M" , "team2": "Sam Houston State" , "location": "-96.3144, 30.6014" , "date": "9/7/13" },
 
-{ "team1": "Texas A&M" , "team2": "SMU" , "location": "96.3144, 30.6014" , "date": "9/21/13" },
+{ "team1": "Texas A&M" , "team2": "SMU" , "location": "-96.3144, 30.6014" , "date": "9/21/13" },
 
-{ "team1": "Texas A&M" , "team2": "Ole Miss" , "location": "89.5261, 34.3597" , "date": "10/12/13" },
+{ "team1": "Texas A&M" , "team2": "Ole Miss" , "location": "-89.5261, 34.3597" , "date": "10/12/13" },
 
-{ "team1": "Texas A&M" , "team2": "UTEP" , "location": "96.3144, 30.6014" , "date": "11/2/13" },
+{ "team1": "Texas A&M" , "team2": "UTEP" , "location": "-96.3144, 30.6014" , "date": "11/2/13" },
 
-{ "team1": "Texas A&M" , "team2": "Mississippi State" , "location": "96.3144, 30.6014" , "date": "11/9/13" },
+{ "team1": "Texas A&M" , "team2": "Mississippi State" , "location": "-96.3144, 30.6014" , "date": "11/9/13" },
 
-{ "team1": "Texas A&M" , "team2": "LSU" , "location": "91.1400, 30.4500" , "date": "11/23/13" },
+{ "team1": "Texas A&M" , "team2": "LSU" , "location": "-91.1400, 30.4500" , "date": "11/23/13" },
 
-{ "team1": "LSU" , "team2": "UAB" , "location": "91.1400, 30.4500" , "date": "9/7/13" },
+{ "team1": "LSU" , "team2": "UAB" , "location": "-91.1400, 30.4500" , "date": "9/7/13" },
 
-{ "team1": "LSU" , "team2": "Kent State" , "location": "91.1400, 30.4500" , "date": "9/14/13" },
+{ "team1": "LSU" , "team2": "Kent State" , "location": "-91.1400, 30.4500" , "date": "9/14/13" },
 
-{ "team1": "LSU" , "team2": "Mississippi State" , "location": "88.8200, 33.4625" , "date": "10/5/13" },
+{ "team1": "LSU" , "team2": "Mississippi State" , "location": "-88.8200, 33.4625" , "date": "10/5/13" },
 
-{ "team1": "LSU" , "team2": "Ole Miss" , "location": "89.5261, 34.3597" , "date": "10/19/13" },
+{ "team1": "LSU" , "team2": "Ole Miss" , "location": "-89.5261, 34.3597" , "date": "10/19/13" },
 
-{ "team1": "LSU" , "team2": "Furman" , "location": "91.1400, 30.4500" , "date": "10/26/13" },
+{ "team1": "LSU" , "team2": "Furman" , "location": "-91.1400, 30.4500" , "date": "10/26/13" },
 
-{ "team1": "Ole Miss" , "team2": "SEMO" , "location": "89.5261, 34.3597" , "date": "9/7/13" },
+{ "team1": "Ole Miss" , "team2": "SEMO" , "location": "-89.5261, 34.3597" , "date": "9/7/13" },
 
-{ "team1": "Ole Miss" , "team2": "Idaho" , "location": "89.5261, 34.3597" , "date": "10/26/13" },
+{ "team1": "Ole Miss" , "team2": "Idaho" , "location": "-89.5261, 34.3597" , "date": "10/26/13" },
 
-{ "team1": "Ole Miss" , "team2": "Troy" , "location": "89.5261, 34.3597" , "date": "11/16/13" },
+{ "team1": "Ole Miss" , "team2": "Troy" , "location": "-89.5261, 34.3597" , "date": "11/16/13" },
 
-{ "team1": "Ole Miss" , "team2": "Mississippi State" , "location": "88.8200, 33.4625" , "date": "11/28/13" },
+{ "team1": "Ole Miss" , "team2": "Mississippi State" , "location": "-88.8200, 33.4625" , "date": "11/28/13" },
 
-{ "team1": "Mississippi State" , "team2": "Alcorn State" , "location": "88.8200, 33.4625" , "date": "9/7/13" },
+{ "team1": "Mississippi State" , "team2": "Alcorn State" , "location": "-88.8200, 33.4625" , "date": "9/7/13" },
 
-{ "team1": "Mississippi State" , "team2": "Troy" , "location": "88.8200, 33.4625" , "date": "9/21/13" },
+{ "team1": "Mississippi State" , "team2": "Troy" , "location": "-88.8200, 33.4625" , "date": "9/21/13" },
 
-{ "team1": "Mississippi State" , "team2": "Bowling Green" , "location": "88.8200, 33.4625" , "date": "10/12/13" },
+{ "team1": "Mississippi State" , "team2": "Bowling Green" , "location": "-88.8200, 33.4625" , "date": "10/12/13" },
 
-{ "team1": "Mississippi State" , "team2": "South Carolina" , "location": "81.0353, 34.0008" , "date": "11/2/13" },
+{ "team1": "Mississippi State" , "team2": "South Carolina" , "location": "-81.0353, 34.0008" , "date": "11/2/13" },
 
-{ "team1": "South Carolina" , "team2": "North Carolina" , "location": "81.0353, 34.0008" , "date": "8/29/13" },
+{ "team1": "South Carolina" , "team2": "North Carolina" , "location": "-81.0353, 34.0008" , "date": "8/29/13" },
 
-{ "team1": "South Carolina" , "team2": "Coastal Carolina" , "location": "81.0353, 34.0008" , "date": "11/23/13" },
+{ "team1": "South Carolina" , "team2": "Coastal Carolina" , "location": "-81.0353, 34.0008" , "date": "11/23/13" },
 
-{ "team1": "South Carolina" , "team2": "Clemson" , "location": "81.0353, 34.0008" , "date": "11/30/13" },
+{ "team1": "South Carolina" , "team2": "Clemson" , "location": "-81.0353, 34.0008" , "date": "11/30/13" },
 
-{ "team1": "North Carolina" , "team2": "Middle Tennessee State" , "location": "79.0333, 35.9333" , "date": "9/7/13" },
+{ "team1": "North Carolina" , "team2": "Middle Tennessee State" , "location": "-79.0333, 35.9333" , "date": "9/7/13" },
 
-{ "team1": "North Carolina" , "team2": "Georgia Tech" , "location": "84.3900, 33.7550" , "date": "9/21/13" },
+{ "team1": "North Carolina" , "team2": "Georgia Tech" , "location": "-84.3900, 33.7550" , "date": "9/21/13" },
 
-{ "team1": "North Carolina" , "team2": "East Carolina" , "location": "79.0333, 35.9333" , "date": "9/28/13" },
+{ "team1": "North Carolina" , "team2": "East Carolina" , "location": "-79.0333, 35.9333" , "date": "9/28/13" },
 
-{ "team1": "North Carolina" , "team2": "Virginia Tech" , "location": "80.4178, 37.2300" , "date": "10/5/13" },
+{ "team1": "North Carolina" , "team2": "Virginia Tech" , "location": "-80.4178, 37.2300" , "date": "10/5/13" },
 
-{ "team1": "North Carolina" , "team2": "Miami" , "location": "79.0333, 35.9333" , "date": "10/17/13" },
+{ "team1": "North Carolina" , "team2": "Miami" , "location": "-79.0333, 35.9333" , "date": "10/17/13" },
 
-{ "team1": "North Carolina" , "team2": "Boston College" , "location": "79.0333, 35.9333" , "date": "10/26/13" },
+{ "team1": "North Carolina" , "team2": "Boston College" , "location": "-79.0333, 35.9333" , "date": "10/26/13" },
 
-{ "team1": "North Carolina" , "team2": "NC State" , "location": "78.6447, 35.8189" , "date": "11/2/13" },
+{ "team1": "North Carolina" , "team2": "NC State" , "location": "-78.6447, 35.8189" , "date": "11/2/13" },
 
-{ "team1": "North Carolina" , "team2": "Virginia" , "location": "79.0333, 35.9333" , "date": "11/9/13" },
+{ "team1": "North Carolina" , "team2": "Virginia" , "location": "-79.0333, 35.9333" , "date": "11/9/13" },
 
-{ "team1": "North Carolina" , "team2": "Pitt" , "location": "80.0000, 40.4417" , "date": "11/16/13" },
+{ "team1": "North Carolina" , "team2": "Pitt" , "location": "-80.0000, 40.4417" , "date": "11/16/13" },
 
-{ "team1": "North Carolina" , "team2": "Old Dominion" , "location": "79.0333, 35.9333" , "date": "11/23/13" },
+{ "team1": "North Carolina" , "team2": "Old Dominion" , "location": "-79.0333, 35.9333" , "date": "11/23/13" },
 
-{ "team1": "North Carolina" , "team2": "Duke" , "location": "79.0333, 35.9333" , "date": "11/30/13" },
+{ "team1": "North Carolina" , "team2": "Duke" , "location": "-79.0333, 35.9333" , "date": "11/30/13" },
 
-{ "team1": "Clemson" , "team2": "South Carolina State" , "location": "82.8392, 34.6783" , "date": "9/7/13" },
+{ "team1": "Clemson" , "team2": "South Carolina State" , "location": "-82.8392, 34.6783" , "date": "9/7/13" },
 
-{ "team1": "Clemson" , "team2": "NC State" , "location": "78.6447, 35.8189" , "date": "9/19/13" },
+{ "team1": "Clemson" , "team2": "NC State" , "location": "-78.6447, 35.8189" , "date": "9/19/13" },
 
-{ "team1": "Clemson" , "team2": "Wake Forest" , "location": "82.8392, 34.6783" , "date": "9/28/13" },
+{ "team1": "Clemson" , "team2": "Wake Forest" , "location": "-82.8392, 34.6783" , "date": "9/28/13" },
 
-{ "team1": "Clemson" , "team2": "Syracuse" , "location": "76.1444, 43.0469" , "date": "10/5/13" },
+{ "team1": "Clemson" , "team2": "Syracuse" , "location": "-76.1444, 43.0469" , "date": "10/5/13" },
 
-{ "team1": "Clemson" , "team2": "Boston College" , "location": "82.8392, 34.6783" , "date": "10/12/13" },
+{ "team1": "Clemson" , "team2": "Boston College" , "location": "-82.8392, 34.6783" , "date": "10/12/13" },
 
-{ "team1": "Clemson" , "team2": "Florida State" , "location": "82.8392, 34.6783" , "date": "10/19/13" },
+{ "team1": "Clemson" , "team2": "Florida State" , "location": "-82.8392, 34.6783" , "date": "10/19/13" },
 
-{ "team1": "Clemson" , "team2": "Maryland" , "location": "76.9275, 38.9967" , "date": "10/26/13" },
+{ "team1": "Clemson" , "team2": "Maryland" , "location": "-76.9275, 38.9967" , "date": "10/26/13" },
 
-{ "team1": "Clemson" , "team2": "Virginia" , "location": "78.4790, 38.0299" , "date": "11/2/13" },
+{ "team1": "Clemson" , "team2": "Virginia" , "location": "-78.4790, 38.0299" , "date": "11/2/13" },
 
-{ "team1": "Clemson" , "team2": "Georgia Tech" , "location": "82.8392, 34.6783" , "date": "11/14/13" },
+{ "team1": "Clemson" , "team2": "Georgia Tech" , "location": "-82.8392, 34.6783" , "date": "11/14/13" },
 
-{ "team1": "Clemson" , "team2": "Citadel" , "location": "82.8392, 34.6783" , "date": "11/23/13" },
+{ "team1": "Clemson" , "team2": "Citadel" , "location": "-82.8392, 34.6783" , "date": "11/23/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Elon" , "location": "84.3900, 33.7550" , "date": "8/31/13" },
+{ "team1": "Georgia Tech" , "team2": "Elon" , "location": "-84.3900, 33.7550" , "date": "8/31/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Duke" , "location": "78.9072, 35.9886" , "date": "9/14/13" },
+{ "team1": "Georgia Tech" , "team2": "Duke" , "location": "-78.9072, 35.9886" , "date": "9/14/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Virginia Tech" , "location": "84.3900, 33.7550" , "date": "9/26/13" },
+{ "team1": "Georgia Tech" , "team2": "Virginia Tech" , "location": "-84.3900, 33.7550" , "date": "9/26/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Miami" , "location": "80.2699, 25.9421" , "date": "10/5/13" },
+{ "team1": "Georgia Tech" , "team2": "Miami" , "location": "-80.2699, 25.9421" , "date": "10/5/13" },
 
-{ "team1": "Georgia Tech" , "team2": "BYU" , "location": "111.6608, 40.2444" , "date": "10/12/13" },
+{ "team1": "Georgia Tech" , "team2": "BYU" , "location": "-111.6608, 40.2444" , "date": "10/12/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Syracuse" , "location": "84.3900, 33.7550" , "date": "10/19/13" },
+{ "team1": "Georgia Tech" , "team2": "Syracuse" , "location": "-84.3900, 33.7550" , "date": "10/19/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Virginia" , "location": "78.4790, 38.0299" , "date": "10/26/13" },
+{ "team1": "Georgia Tech" , "team2": "Virginia" , "location": "-78.4790, 38.0299" , "date": "10/26/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Pitt" , "location": "84.3900, 33.7550" , "date": "11/2/13" },
+{ "team1": "Georgia Tech" , "team2": "Pitt" , "location": "-84.3900, 33.7550" , "date": "11/2/13" },
 
-{ "team1": "Georgia Tech" , "team2": "Alabama A&M" , "location": "84.3900, 33.7550" , "date": "11/23/13" },
+{ "team1": "Georgia Tech" , "team2": "Alabama A&M" , "location": "-84.3900, 33.7550" , "date": "11/23/13" },
 
-{ "team1": "Florida State" , "team2": "Pitt" , "location": "80.0000, 40.4417" , "date": "9/2/13" },
+{ "team1": "Florida State" , "team2": "Pitt" , "location": "-80.0000, 40.4417" , "date": "9/2/13" },
 
-{ "team1": "Florida State" , "team2": "Nevada" , "location": "84.2533, 30.4550" , "date": "9/14/13" },
+{ "team1": "Florida State" , "team2": "Nevada" , "location": "-84.2533, 30.4550" , "date": "9/14/13" },
 
-{ "team1": "Florida State" , "team2": "Bethune Cookman" , "location": "84.2533, 30.4550" , "date": "9/21/13" },
+{ "team1": "Florida State" , "team2": "Bethune Cookman" , "location": "-84.2533, 30.4550" , "date": "9/21/13" },
 
-{ "team1": "Florida State" , "team2": "Boston College" , "location": "71.1661, 42.3306" , "date": "9/28/13" },
+{ "team1": "Florida State" , "team2": "Boston College" , "location": "-71.1661, 42.3306" , "date": "9/28/13" },
 
-{ "team1": "Florida State" , "team2": "Maryland" , "location": "84.2533, 30.4550" , "date": "10/5/13" },
+{ "team1": "Florida State" , "team2": "Maryland" , "location": "-84.2533, 30.4550" , "date": "10/5/13" },
 
-{ "team1": "Florida State" , "team2": "NC State" , "location": "84.2533, 30.4550" , "date": "10/26/13" },
+{ "team1": "Florida State" , "team2": "NC State" , "location": "-84.2533, 30.4550" , "date": "10/26/13" },
 
-{ "team1": "Florida State" , "team2": "Miami" , "location": "84.2533, 30.4550" , "date": "11/2/13" },
+{ "team1": "Florida State" , "team2": "Miami" , "location": "-84.2533, 30.4550" , "date": "11/2/13" },
 
-{ "team1": "Florida State" , "team2": "Wake Forest" , "location": "80.2605, 36.1028" , "date": "11/9/13" },
+{ "team1": "Florida State" , "team2": "Wake Forest" , "location": "-80.2605, 36.1028" , "date": "11/9/13" },
 
-{ "team1": "Florida State" , "team2": "Syracuse" , "location": "84.2533, 30.4550" , "date": "11/16/13" },
+{ "team1": "Florida State" , "team2": "Syracuse" , "location": "-84.2533, 30.4550" , "date": "11/16/13" },
 
-{ "team1": "Florida State" , "team2": "Idaho" , "location": "84.2533, 30.4550" , "date": "11/23/13" },
+{ "team1": "Florida State" , "team2": "Idaho" , "location": "-84.2533, 30.4550" , "date": "11/23/13" },
 
-{ "team1": "Miami" , "team2": "Florida Atlantic" , "location": "80.2699, 25.9421" , "date": "8/30/13" },
+{ "team1": "Miami" , "team2": "Florida Atlantic" , "location": "-80.2699, 25.9421" , "date": "8/30/13" },
 
-{ "team1": "Miami" , "team2": "Savannah State" , "location": "80.2699, 25.9421" , "date": "9/21/13" },
+{ "team1": "Miami" , "team2": "Savannah State" , "location": "-80.2699, 25.9421" , "date": "9/21/13" },
 
-{ "team1": "Miami" , "team2": "Wake Forest" , "location": "80.2699, 25.9421" , "date": "10/26/13" },
+{ "team1": "Miami" , "team2": "Wake Forest" , "location": "-80.2699, 25.9421" , "date": "10/26/13" },
 
-{ "team1": "Miami" , "team2": "Virginia Tech" , "location": "80.2699, 25.9421" , "date": "11/9/13" },
+{ "team1": "Miami" , "team2": "Virginia Tech" , "location": "-80.2699, 25.9421" , "date": "11/9/13" },
 
-{ "team1": "Miami" , "team2": "Duke" , "location": "78.9072, 35.9886" , "date": "11/16/13" },
+{ "team1": "Miami" , "team2": "Duke" , "location": "-78.9072, 35.9886" , "date": "11/16/13" },
 
-{ "team1": "Miami" , "team2": "Virginia" , "location": "80.2699, 25.9421" , "date": "11/23/13" },
+{ "team1": "Miami" , "team2": "Virginia" , "location": "-80.2699, 25.9421" , "date": "11/23/13" },
 
-{ "team1": "Miami" , "team2": "Pitt" , "location": "80.0000, 40.4417" , "date": "11/29/13" },
+{ "team1": "Miami" , "team2": "Pitt" , "location": "-80.0000, 40.4417" , "date": "11/29/13" },
 
-{ "team1": "NC State" , "team2": "Louisiana Tech" , "location": "78.6447, 35.8189" , "date": "8/31/13" },
+{ "team1": "NC State" , "team2": "Louisiana Tech" , "location": "-78.6447, 35.8189" , "date": "8/31/13" },
 
-{ "team1": "NC State" , "team2": "Richmond" , "location": "78.6447, 35.8189" , "date": "9/7/13" },
+{ "team1": "NC State" , "team2": "Richmond" , "location": "-78.6447, 35.8189" , "date": "9/7/13" },
 
-{ "team1": "NC State" , "team2": "Central Michigan" , "location": "78.6447, 35.8189" , "date": "9/28/13" },
+{ "team1": "NC State" , "team2": "Central Michigan" , "location": "-78.6447, 35.8189" , "date": "9/28/13" },
 
-{ "team1": "NC State" , "team2": "Wake Forest" , "location": "80.2605, 36.1028" , "date": "10/5/13" },
+{ "team1": "NC State" , "team2": "Wake Forest" , "location": "-80.2605, 36.1028" , "date": "10/5/13" },
 
-{ "team1": "NC State" , "team2": "Syracuse" , "location": "78.6447, 35.8189" , "date": "10/12/13" },
+{ "team1": "NC State" , "team2": "Syracuse" , "location": "-78.6447, 35.8189" , "date": "10/12/13" },
 
-{ "team1": "NC State" , "team2": "Duke" , "location": "78.9072, 35.9886" , "date": "11/9/13" },
+{ "team1": "NC State" , "team2": "Duke" , "location": "-78.9072, 35.9886" , "date": "11/9/13" },
 
-{ "team1": "NC State" , "team2": "Boston College" , "location": "71.1661, 42.3306" , "date": "11/16/13" },
+{ "team1": "NC State" , "team2": "Boston College" , "location": "-71.1661, 42.3306" , "date": "11/16/13" },
 
-{ "team1": "NC State" , "team2": "East Carolina" , "location": "78.6447, 35.8189" , "date": "11/23/13" },
+{ "team1": "NC State" , "team2": "East Carolina" , "location": "-78.6447, 35.8189" , "date": "11/23/13" },
 
-{ "team1": "NC State" , "team2": "Maryland" , "location": "78.6447, 35.8189" , "date": "11/30/13" },
+{ "team1": "NC State" , "team2": "Maryland" , "location": "-78.6447, 35.8189" , "date": "11/30/13" },
 
-{ "team1": "Virginia" , "team2": "BYU" , "location": "78.4790, 38.0299" , "date": "8/31/13" },
+{ "team1": "Virginia" , "team2": "BYU" , "location": "-78.4790, 38.0299" , "date": "8/31/13" },
 
-{ "team1": "Virginia" , "team2": "Oregon" , "location": "78.4790, 38.0299" , "date": "9/7/13" },
+{ "team1": "Virginia" , "team2": "Oregon" , "location": "-78.4790, 38.0299" , "date": "9/7/13" },
 
-{ "team1": "Virginia" , "team2": "VMI" , "location": "78.4790, 38.0299" , "date": "9/21/13" },
+{ "team1": "Virginia" , "team2": "VMI" , "location": "-78.4790, 38.0299" , "date": "9/21/13" },
 
-{ "team1": "Virginia" , "team2": "Pitt" , "location": "80.0000, 40.4417" , "date": "9/28/13" },
+{ "team1": "Virginia" , "team2": "Pitt" , "location": "-80.0000, 40.4417" , "date": "9/28/13" },
 
-{ "team1": "Virginia" , "team2": "Ball State" , "location": "78.4790, 38.0299" , "date": "10/5/13" },
+{ "team1": "Virginia" , "team2": "Ball State" , "location": "-78.4790, 38.0299" , "date": "10/5/13" },
 
-{ "team1": "Virginia" , "team2": "Maryland" , "location": "76.9275, 38.9967" , "date": "10/12/13" },
+{ "team1": "Virginia" , "team2": "Maryland" , "location": "-76.9275, 38.9967" , "date": "10/12/13" },
 
-{ "team1": "Virginia" , "team2": "Duke" , "location": "78.4790, 38.0299" , "date": "10/26/13" },
+{ "team1": "Virginia" , "team2": "Duke" , "location": "-78.4790, 38.0299" , "date": "10/26/13" },
 
-{ "team1": "Virginia" , "team2": "Virginia Tech" , "location": "78.4790, 38.0299" , "date": "11/30/13" },
+{ "team1": "Virginia" , "team2": "Virginia Tech" , "location": "-78.4790, 38.0299" , "date": "11/30/13" },
 
-{ "team1": "Virginia Tech" , "team2": "Western Carolina" , "location": "80.4178, 37.2300" , "date": "9/7/2013" },
+{ "team1": "Virginia Tech" , "team2": "Western Carolina" , "location": "-80.4178, 37.2300" , "date": "9/7/2013" },
 
-{ "team1": "Virginia Tech" , "team2": "Marshall" , "location": "80.4178, 37.2300" , "date": "9/21/13" },
+{ "team1": "Virginia Tech" , "team2": "Marshall" , "location": "-80.4178, 37.2300" , "date": "9/21/13" },
 
-{ "team1": "Virginia Tech" , "team2": "Pitt" , "location": "80.4178, 37.2300" , "date": "10/12/13" },
+{ "team1": "Virginia Tech" , "team2": "Pitt" , "location": "-80.4178, 37.2300" , "date": "10/12/13" },
 
-{ "team1": "Virginia Tech" , "team2": "Duke" , "location": "80.4178, 37.2300" , "date": "10/26/13" },
+{ "team1": "Virginia Tech" , "team2": "Duke" , "location": "-80.4178, 37.2300" , "date": "10/26/13" },
 
-{ "team1": "Virginia Tech" , "team2": "Boston College" , "location": "71.1661, 42.3306" , "date": "11/2/13" },
+{ "team1": "Virginia Tech" , "team2": "Boston College" , "location": "-71.1661, 42.3306" , "date": "11/2/13" },
 
-{ "team1": "Virginia Tech" , "team2": "Maryland" , "location": "80.4178, 37.2300" , "date": "11/16/13" },
+{ "team1": "Virginia Tech" , "team2": "Maryland" , "location": "-80.4178, 37.2300" , "date": "11/16/13" },
 
-{ "team1": "Maryland" , "team2": "Florida International" , "location": "76.9275, 38.9967" , "date": "8/31/13" },
+{ "team1": "Maryland" , "team2": "Florida International" , "location": "-76.9275, 38.9967" , "date": "8/31/13" },
 
-{ "team1": "Maryland" , "team2": "Old Dominion" , "location": "76.9275, 38.9967" , "date": "9/7/13" },
+{ "team1": "Maryland" , "team2": "Old Dominion" , "location": "-76.9275, 38.9967" , "date": "9/7/13" },
 
-{ "team1": "Maryland" , "team2": "Wake Forest" , "location": "80.2605, 36.1028" , "date": "10/19/13" },
+{ "team1": "Maryland" , "team2": "Wake Forest" , "location": "-80.2605, 36.1028" , "date": "10/19/13" },
 
-{ "team1": "Maryland" , "team2": "Syracuse" , "location": "76.9275, 38.9967" , "date": "11/9/13" },
+{ "team1": "Maryland" , "team2": "Syracuse" , "location": "-76.9275, 38.9967" , "date": "11/9/13" },
 
-{ "team1": "Maryland" , "team2": "Boston College" , "location": "76.9275, 38.9967" , "date": "11/23/13" },
+{ "team1": "Maryland" , "team2": "Boston College" , "location": "-76.9275, 38.9967" , "date": "11/23/13" },
 
-{ "team1": "Boston College" , "team2": "Villanova" , "location": "71.1661, 42.3306" , "date": "8/31/13" },
+{ "team1": "Boston College" , "team2": "Villanova" , "location": "-71.1661, 42.3306" , "date": "8/31/13" },
 
-{ "team1": "Boston College" , "team2": "Wake Forest" , "location": "71.1661, 42.3306" , "date": "9/6/13" },
+{ "team1": "Boston College" , "team2": "Wake Forest" , "location": "-71.1661, 42.3306" , "date": "9/6/13" },
 
-{ "team1": "Boston College" , "team2": "Army" , "location": "71.1661, 42.3306" , "date": "10/5/13" },
+{ "team1": "Boston College" , "team2": "Army" , "location": "-71.1661, 42.3306" , "date": "10/5/13" },
 
-{ "team1": "Boston College" , "team2": "Syracuse" , "location": "76.1444, 43.0469" , "date": "11/30/13" },
+{ "team1": "Boston College" , "team2": "Syracuse" , "location": "-76.1444, 43.0469" , "date": "11/30/13" },
 
-{ "team1": "Pitt" , "team2": "New Mexico" , "location": "80.0000, 40.4417" , "date": "9/14/13" },
+{ "team1": "Pitt" , "team2": "New Mexico" , "location": "-80.0000, 40.4417" , "date": "9/14/13" },
 
-{ "team1": "Pitt" , "team2": "Duke" , "location": "78.9072, 35.9886" , "date": "9/21/13" },
+{ "team1": "Pitt" , "team2": "Duke" , "location": "-78.9072, 35.9886" , "date": "9/21/13" },
 
-{ "team1": "Pitt" , "team2": "Old Dominion" , "location": "80.0000, 40.4417" , "date": "10/19/13" },
+{ "team1": "Pitt" , "team2": "Old Dominion" , "location": "-80.0000, 40.4417" , "date": "10/19/13" },
 
-{ "team1": "Pitt" , "team2": "Navy" , "location": "76.5012, 38.9729" , "date": "10/26/13" },
+{ "team1": "Pitt" , "team2": "Navy" , "location": "-76.5012, 38.9729" , "date": "10/26/13" },
 
-{ "team1": "Pitt" , "team2": "Notre Dame" , "location": "80.0000, 40.4417" , "date": "11/9/13" },
+{ "team1": "Pitt" , "team2": "Notre Dame" , "location": "-80.0000, 40.4417" , "date": "11/9/13" },
 
-{ "team1": "Pitt" , "team2": "Syracuse" , "location": "76.1444, 43.0469" , "date": "11/23/13" },
+{ "team1": "Pitt" , "team2": "Syracuse" , "location": "-76.1444, 43.0469" , "date": "11/23/13" },
 
-{ "team1": "Syracuse" , "team2": "Wagner" , "location": "76.1444, 43.0469" , "date": "9/14/13" },
+{ "team1": "Syracuse" , "team2": "Wagner" , "location": "-76.1444, 43.0469" , "date": "9/14/13" },
 
-{ "team1": "Syracuse" , "team2": "Tulane" , "location": "76.1444, 43.0469" , "date": "9/21/13" },
+{ "team1": "Syracuse" , "team2": "Tulane" , "location": "-76.1444, 43.0469" , "date": "9/21/13" },
 
-{ "team1": "Syracuse" , "team2": "Wake Forest" , "location": "76.1444, 43.0469" , "date": "11/2/13" },
+{ "team1": "Syracuse" , "team2": "Wake Forest" , "location": "-76.1444, 43.0469" , "date": "11/2/13" },
 
-{ "team1": "Duke" , "team2": "NC Central" , "location": "78.9072, 35.9886" , "date": "8/31/13" },
+{ "team1": "Duke" , "team2": "NC Central" , "location": "-78.9072, 35.9886" , "date": "8/31/13" },
 
-{ "team1": "Duke" , "team2": "Memphis" , "location": "Memphis, TN" , "date": "9/7/13" },
+{ "team1": "Duke" , "team2": "Troy" , "location": "-78.9072, 35.9886" , "date": "9/28/13" },
 
-{ "team1": "Duke" , "team2": "Troy" , "location": "78.9072, 35.9886" , "date": "9/28/13" },
+{ "team1": "Duke" , "team2": "Navy" , "location": "-78.9072, 35.9886" , "date": "10/12/13" },
 
-{ "team1": "Duke" , "team2": "Navy" , "location": "78.9072, 35.9886" , "date": "10/12/13" },
+{ "team1": "Duke" , "team2": "Wake Forest" , "location": "-80.2605, 36.1028" , "date": "11/23/13" },
 
-{ "team1": "Duke" , "team2": "Wake Forest" , "location": "80.2605, 36.1028" , "date": "11/23/13" },
+{ "team1": "Wake Forest" , "team2": "Presbyterian" , "location": "-80.2605, 36.1028" , "date": "8/29/13" },
 
-{ "team1": "Wake Forest" , "team2": "Presbyterian" , "location": "80.2605, 36.1028" , "date": "8/29/13" },
-
-{ "team1": "Wake Forest" , "team2": "Louisiana-Monroe" , "location": "80.2605, 36.1028" , "date": "9/14/13" }
+{ "team1": "Wake Forest" , "team2": "Louisiana-Monroe" , "location": "-80.2605, 36.1028" , "date": "9/14/13" }
 
 ]

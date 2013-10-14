@@ -2,6 +2,7 @@
 $(function() {
   //  $('body').append('<div id="last_post"></div>');
 $('#tooltip').hide();
+
     var socket = io.connect(window.location.hostname);
     var date;
     socket.on('data', function(inputdata) {
@@ -17,13 +18,29 @@ $('#tooltip').hide();
         var axis_vals_acc = [];
         var axis_vals_sec = [];
         gamedata = inputdata[0];
-        places = inputdata[1];
-
-        gamedata.forEach(function(d) {
+        var pie_data = [];
+      //  places = inputdata[1];
+      var projection = d3.geo.albersUsa();
+        var totals = [];
+      
+        gamedata.forEach(function(d,i) {
             d.total = d.team1_count + d.team2_count; 
+            totals.push(d.total);
+            d.location = d.location.split(', ');
+            d.location = [Number(d.location[0]),Number(d.location[1])];
+           // pie_data.push({ "team":d.team2, "color":d.team2_colors, "count":d.team2_count });
+
         });
         gamedata.sort(function(a, b) { return b.total - a.total; });
 
+        gamedata.forEach(function(d,i) {
+            pie_data.push({ "id":i, "game": '<b>'+d.team1 + '</b>: ' + d.team1_count+'<br/><b>'+d.team2+'</b>: '+d.team2_count, "team":d.team1, "color":d.team1_colors, "count":d.team1_count, "location":d.location, "r":d.team1_count+d.team2_count },{ "id":i, "game": '<b>'+d.team1 + '</b>: ' + d.team1_count+'<br/><b>'+d.team2+'</b>: '+d.team2_count, "team":d.team2, "color":d.team2_colors, "count":d.team2_count, "location":d.location, "r":d.team1_count+d.team2_count });
+        });
+
+        var the_max = d3.max(totals);
+
+
+        
         for (var v=0;v<gamedata.length;v++){
             if (gamedata[v].team1_count != undefined && gamedata[v].team2_count != undefined){
                 team1.push({ "x":v , "y":gamedata[v].team1_count, "team":gamedata[v].team1, "color":gamedata[v].team1_colors, "mascot":gamedata[v].team1_mascot, "conf":gamedata[v].team1_conf });    
@@ -47,30 +64,6 @@ $('#tooltip').hide();
     
 
         makeChart(team1,team2,'all-chart',axis_vals_all,'All games this week');
-
-        $('#map-sorter').empty().append('<h4 style="float:left;display:inline;">Filter by game:</h4>');
-        $('#map-sorter').append('<select id="filtermap"><option id="option_all">All games</option></select>');
-        for (var i=0;i<axis_vals_all.length;i++){
-            $('#filtermap').append('<option id="option'+i+'">'+axis_vals_all[i]+'</option>');
-        }
-
-        $('#filtermap').change(function(event){
-            var thisone = $(this).val();
-            var chart = 'map-chart';
-            if (thisone == 'All games'){
-                makeMap(places,chart,'Game tweets by location');
-            }
-            else {
-                thisone = thisone.split(' vs. ');
-                var selected_places = [];
-                for(var i=0;i<places.length;i++){
-                    if (places[i].team == thisone[0] || places[i].team == thisone[1]){
-                        selected_places.push(places[i]);
-                    }
-                }
-                makeMap(selected_places,chart,'Game tweets by location');
-            }
-        });
 
 
         $('li').each(function(){
@@ -117,13 +110,14 @@ $('#tooltip').hide();
             //Create SVG element
             var svg = d3.select('#'+chart)
                         .append("svg")
-                        .attr("width", width)
-                        .attr("height", h);
-
+                        .attr("width", svg_width)
+                        .attr("height", svg_height);
+            
             var dataset = [team1,team2];
             var stack = d3.layout.stack();
                 dataset = stack(dataset);
             //console.log(countData);
+
 
          //   var ymax = d3.max(team1_count)+d3.max(team2_count);
             
@@ -239,26 +233,15 @@ $('#tooltip').hide();
                 .attr("x", 100)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end");  
-
-            svg.append("text")
-                .attr("transform", "rotate(-90)")
-                .attr("y", 0 + (margin.left*5))
-                .attr("x",0 - (height / 2))
-                .attr("dy", "1em")
-                .style("text-anchor", "middle")
-                .text("# of tweets");
         };
 
 
-
-        function makeMap(gamedata,chart,title,teams){
-
+        function makeMap(data,chart,title){
             $('#map-chart').empty();
             $('#map-holder h2').empty().append(title);
-            $('#map-holder p').empty().append('<b>Roll over the dots to see which teams were a tweet topic from that location.</b>');
-            $('#map-holder h5').empty().append('*Note: Only tweets that have location data attached will appear on this map.');
+            $('#map-holder p').empty().append('<b>This map represents which games involving ACC or SEC teams are being tweeted about the most this week. The larger the pie, the more Twitter buzz the game has generated (pie locations are based on where the game is being played). Hover over each pie to see how the number of tweets break down.</b>');
             var w = $('#map-chart').width();
-            var h = 600;
+            var h = 900;
             var margin = {top: 40, right: 10, bottom: 20, left: 10},
                 width = w - margin.left - margin.right - 100,
                 height = h - margin.top - margin.bottom - 100,
@@ -268,13 +251,14 @@ $('#tooltip').hide();
             //Create SVG element
 
             var projection = d3.geo.albersUsa()
-                .scale(w+100)
-                .translate([w / 2, h / 2]);
+                .scale(w*2.4)
+                .translate([w/7, h/2.6]);
 
-            var path = d3.geo.path()
+          var path = d3.geo.path()
                 .projection(projection);
 
-            var svg = d3.select('#'+chart)
+
+             var svg = d3.select('#'+chart)
                         .append("svg")
                         .attr("width", svg_width)
                         .attr("height", svg_height);
@@ -283,59 +267,102 @@ $('#tooltip').hide();
                 .attr("class", "background")
                 .attr("width", svg_width)
                 .attr("height", svg_height);
-               // .on("click", clicked);
+                
 
             var g = svg.append("g");
 
             d3.json("us.json", function(error, us) {
-              g.append("g")
+                g.append("g")
                   .attr("id", "states")
                 .selectAll("path")
                   .data(topojson.feature(us, us.objects.states).features)
                 .enter().append("path")
                   .attr("d", path);
 
-              g.append("path")
+                g.append("path")
                   .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
                   .attr("id", "state-borders")
                   .attr("d", path);
 
-                for (var i=0;i<places.length;i++){
-                    console.log(places[i].coords);
-                    var coords = projection(places[i].coords);
-                    console.log(coords);
-                    if(coords != null){
-                        g.append('circle')
-                        .attr('cx', coords[0])
-                        .attr('cy', coords[1])
-                        .attr('r', 5)
-                        .style('opacity',0.8)
-                        .attr('id', i)
-                        .style('fill',  places[i].color)
-                        .on("mouseover", function() {
-                            $('#tooltip').fadeIn();
-                            //Get this bar's x/y values, then augment for the tooltip
-                            var xPosition = d3.event.pageX-40;
-                            var yPosition = d3.event.pageY+20;
-                            var dotID = d3.event.target.id;
-                            //Update Tooltip Position & value
-                            d3.select("#tooltip")
-                                .style("left", xPosition+'px')
-                                .style("top", yPosition+'px')
-                                .html('<b>'+places[dotID].team+'</b><br/>'+places[dotID].place);
-                        })
-                        .on("mouseout", function() {
-                            //Remove the tooltip
-                            $('#tooltip').hide();
-                        });
-                    }
+                
+                var pie = d3.layout.pie()
+                  .value(function(d) { return +d.count; })
+                  .sort(function(a, b) { return a.count - b.count; });
 
-                }
+              // Define an arc generator. Note the radius is specified here, not the layout.
+                
+
+                var games = d3.nest()
+                  .key(function(d) { return d.id; })
+                  .entries(pie_data);
+
+                var arc = d3.svg.arc()
+                        .innerRadius(0)
+                        .outerRadius(games, function(d){ return d.count });
+                
+                var archolder = svg.selectAll(".arc")
+                    .data(games).enter()
+                    .append("g")
+                    .attr("class","arc")
+                    .attr("id",function(d,i){ return 'pie'+i})
+                    
+
+                var pies = archolder.selectAll("g")
+                    .data(function(d) { return pie(d.values); })
+                    .enter().append("svg:g")
+                    .attr("transform", function(d) { var coords = projection(d.data.location); return "translate(" + coords + ")"; })
+                    .style('z-index', function(d){
+                        return the_max-d.data.r;
+                    });
+
+                pies.append("svg:path")
+                    .attr("id", function(d){ return d.data.id })
+                    .attr("d", d3.svg.arc()
+                        .innerRadius(0)
+                       // .outerRadius(15))
+                        .outerRadius(function(d){ return (d.data.r/the_max)*100 }))
+                    .style("fill", function(d) { return d.data.color; })
+                    .on("mouseover", function(d,i) {
+                        var thisPie = d3.event.target.id;
+                        $('.arc').css({'opacity':'0.7'})
+                        $('#pie'+thisPie).css({'opacity':'1.0'});
+                        $('#tooltip').fadeIn();
+                        //Get this bar's x/y values, then augment for the tooltip
+                        var xPosition = d3.event.pageX-40;
+                        var yPosition = d3.event.pageY+20;
+                        //var dotID = d3.event.target.id;
+                        //Update Tooltip Position & value
+                        d3.select("#tooltip")
+                            .style("left", xPosition+'px')
+                            .style("top", yPosition+'px')
+                            .html('<b>'+d.data.game+'</b><br/>');
+                    })
+                    .on("mouseout", function() {
+                        $('.arc').css({'opacity':'1.0'});
+                        $('#tooltip').hide();
+                    })
+                    .on("click", function(d,i){
+                        var thisPie = d3.event.target.id;
+                        $('.arc').css({'opacity':'0.7'})
+                        $('#pie'+thisPie).css({'opacity':'1.0'});
+                        $('#tooltip').fadeIn();
+                        //Get this bar's x/y values, then augment for the tooltip
+                        var xPosition = d3.event.pageX-40;
+                        var yPosition = d3.event.pageY+20;
+                        //var dotID = d3.event.target.id;
+                        //Update Tooltip Position & value
+                        d3.select("#tooltip")
+                            .style("left", xPosition+'px')
+                            .style("top", yPosition+'px')
+                            .html('<b>'+d.data.game+'</b><br/>');
+                    })
+
 
             });
+            
 
+        };         
 
-        };
 
      });
 });
