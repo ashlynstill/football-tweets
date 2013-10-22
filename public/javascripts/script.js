@@ -315,12 +315,20 @@ $('#tooltip').hide();
                         return the_max-d.data.r;
                     });
 
+                var ratio;
+                var docwidth = $(document).width();
+                if (docwidth < 500){
+                    ratio = 50;
+                } if (docwidth >= 500){
+                    ratio = 100;
+                }
+
                 pies.append("svg:path")
                     .attr("id", function(d){ return d.data.id })
                     .attr("d", d3.svg.arc()
                         .innerRadius(0)
                        // .outerRadius(15))
-                        .outerRadius(function(d){ return (d.data.r/the_max)*100 }))
+                        .outerRadius(function(d){ return (d.data.r/the_max)*ratio }))
                     .style("fill", function(d) { return d.data.color; })
                     .on("mouseover", function(d,i) {
                         var thisPie = d3.event.target.id;
