@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Football Team Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+
+  </head>
+  <style>
+  #submit-row{
+    margin-top:20px;
+    margin-bottom:40px;
+  }
+ .inputs button{
+    font-weight: bold;
+    font-size:26px;
+    margin-top:50px;
+    width:60px;
+    height:50px;
+  }
+  .inputs .full{
+    width:97%;
+  }
+
+  .row .well {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 5px;
+    line-height: 20px;
+    word-break: break-all;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+  }
+  xmp{
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    font-size: 14px;
+    color: #333;
+    white-space: pre-wrap;       /* css-3 */
+     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap;      /* Opera 4-6 */
+     white-space: -o-pre-wrap;    /* Opera 7 */
+     word-wrap: break-word; 
+  }
+
+  </style>
+
+
+  <body>
+
+  <div class="container">
+    <div class="row">
+      <h2>Football Team Data</h2>
+    </div>
+    <div class="row inputs">
+      <div class="span3">
+        <h4>School</h4>
+        <input id="school" type="text">
+      </div>
+      <div class="span3">
+        <h4>Mascot</h4>
+        <input id="mascot" type="text">
+      </div>
+      <div class="span3">
+        <h4>Color</h4>
+        <div class="input-prepend">
+          <span class="add-on">#</span>
+          <input id="color" class="span2" id="prependedInput" type="text">
+        </div>
+      </div>
+      <div class="span3">
+        <h4>Conference</h4>
+        <input id="conference" type="text">
+      </div>
+    </div>
+    <div class="row inputs">
+      <div class="span10">
+        <h4>Search terms in quotes, separated by comma. Don't include the hashtag symbol, but consider that search terms may include spaces or no spaces.</h4>
+        <p><i>(Example: "UNC Football","goheels","Tar Heel football","go heels")</i></p>
+        <input id="search" class="full" type="text">
+      </div>
+      <div class="span2">
+        <button id="addThis" class="btn btn-success">+</button>
+        <button id="removeThis" class="btn btn-danger">-</button>
+      </div>
+    </div>
+    <div class="row">
+      <hr/>
+    </div>
+    <div class="row well">
+    <div id="output">
+      <xmp>
+  //Your JSON output will go here!
+  { teams: [
+      </xmp>
+    </div>
+    <xmp>
+    ] }
+    </xmp>
+    </div> 
+
+  </div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#addThis').click(function(event){
+        var school = $('#school');
+        var mascot = $('#mascot');
+        var color = $('#color');
+        var conference = $('#conference');
+        var search = $('#search');
+
+        var newline = '{ "school": "'+school.val()+'" , "mascot": "'+mascot.val()+'" , "color": "#'+color.val()+'" , "conference": "'+conference.val()+'" , "search": ['+search.val()+'] },';
+
+        $('#output').append('<xmp>\n'+newline+'</xmp>');
+
+        school.val("");
+        mascot.val("");
+        color.val("");
+        conference.val("");
+        search.val("");
+        
+      });
+
+      $('#removeThis').click(function(event){
+        $('#output xmp:last-child').remove();
+      });
+
+
+  </script>
+  </body>
+</html>
